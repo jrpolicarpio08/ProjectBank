@@ -1,0 +1,27 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar></ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+  <div class="mb-3">
+    <div class="phone-container"></div>
+    <ion-icon class="phone-icon" name="phone-portrait-outline"></ion-icon>
+  </div>
+  <div class="fs-24">Verify Your Mobile Number</div>
+  <div class="text-medium fs-18">A 5 digit code has been sent to</div>
+  <div class="text-primary fs-20 mt-1">+63 126 343 120</div>
+  <div class="mb-2 mt-2">
+    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="T">
+    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" Value="3">
+    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="5">
+    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="T">
+    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="S">
+  </div>
+  <div class="text-medium mb-2">Didn't receive the code? <a id="open-toast" button>Resend</a></div>
+  <ion-toast position="top" positionAnchor="header" trigger="open-toast" message="" [duration]="5000"></ion-toast>
+  <ion-button class="btn-primary" onclick="location.href='/emailverified'">Verify</ion-button>
+  <div class="d-flex mt-1">
+    <ion-checkbox mode="md"></ion-checkbox>
+    <div class="text-medium">&nbsp;Don't ask me again on this device for 30 days.</div>
+  </div>
+</ion-content>

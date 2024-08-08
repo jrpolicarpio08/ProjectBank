@@ -1,0 +1,47 @@
+
+
+<ion-content [fullscreen]="true">
+  <div class="half-section ion-padding">
+   <ion-row>
+    <ion-col class="text-white">
+      <div class="fs-30 fw-600">Hi John,</div>
+      <div class="fs-18">Thank you for waiting</div>
+      <div class="mt-1">A customer service representative will answer your inquiry <br> as soon as possible.</div>
+      <div class="mt-1">Information:</div>
+      <div style="margin-top: 5px;">please note that all <br> calls to the center are <br> recorded in order to <br> ensure quality service.</div>
+    </ion-col>
+    <ion-col>
+      <div class="que-container ion-padding ion-text-center">
+        <div class="mt-1 fw-400 fs-25" style="line-height: 25px;">You're <br> Number</div>
+        <div class="fw-600" style="font-size: 100px;">08</div>
+        <div class="fw-400 fs-20 text-medium" style="line-height: 20px;">ESTIMATED <br> WAIT TIME</div>
+        <div class="mt-1 fs-25 fw-600">10 Min</div>
+      </div>
+    </ion-col>
+   </ion-row>
+  </div>
+  <div class="ion-padding">
+    <div class="fs-30 fw-600">While you wait</div>
+    <div>Let's make your time at the call shorter. Choose the type and service your require.</div>
+    <ion-item lines="none" class="mt-2 problem-select">
+      <ion-select mode="ios" justify="space-between" toggleIcon="caret-down-outline" expandedIcon="caret-up-outline" label="Main problem:">
+        <ion-select-option>Account</ion-select-option>
+        <ion-select-option>Transactions</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item lines="none" class="mt-1 problem-select">
+      <ion-select mode="ios" justify="space-between" toggleIcon="caret-down-outline" expandedIcon="caret-up-outline" label="Tell us more:">
+        <ion-select-option>I got hacked</ion-select-option>
+        <ion-select-option>I want a refund</ion-select-option>
+        <ion-select-option>Other</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="ion-padding">
+    <div>
+      <ion-button class="btn" color="danger" (click)="close()">Cancel</ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

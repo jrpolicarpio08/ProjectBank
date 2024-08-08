@@ -1,0 +1,103 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear" onclick="location.href='/mainmenu'">
+        <ion-icon class="fs-25" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="fs-25 ion-text-center">Transfer</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" scroll-y="false">
+  <div class="mt-1">
+    <div class="ion-text-center text-primary" style="font-size: 120px;">
+      <ion-icon name="card-outline"></ion-icon>
+      <ion-icon name="swap-vertical-outline" style="rotate: 90deg;"></ion-icon>
+    </div>
+  </div>
+  <div class="iselect">
+    <div class="fs-20">From Bank Account</div>
+    <div>
+      <ion-item lines="none" class="iselect-dd">
+        <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="PayPal: 4118 9838 0867 5175">
+          <ion-select-option>PayPal: 4118 9838 0867 5175</ion-select-option>
+          <ion-select-option>PayMaya: 4568 4262 6046 8338</ion-select-option>
+          <ion-select-option>G-cash: 4488 7520 2883 4728</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+  </div>
+  <div class="iselect mt-1">
+    <div class="fs-20">To Bank Account</div>
+    <ion-row>
+      <ion-col size="4">
+        <div>
+          <ion-item lines="none" class="iselect-dd">
+            <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="BDO">
+              <ion-select-option>BDO</ion-select-option>
+              <ion-select-option>BPI</ion-select-option>
+              <ion-select-option>CHB</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item lines="none" class="iselect-input">
+            <ion-input placeholder="0000 0000 0000 0000" value="8467 3211 9998 7551"></ion-input>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="iselect mt-1">
+    <div class="fs-20">Bank Account Owner</div>
+      <div>
+        <ion-item lines="none" class="iselect-dd">
+          <ion-input placeholder="Juan Dela Cruz" value="Joaqin Bordado"></ion-input>
+        </ion-item>
+      </div>
+  </div>
+  <div class="iselect mt-1">
+    <div class="fs-20">Amount</div>
+    <ion-row>
+      <ion-col size="3">
+        <div>
+          <ion-item lines="none" class="iselect-dd">
+            <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="₱">
+              <ion-select-option>¥</ion-select-option>
+              <ion-select-option>₱</ion-select-option>
+              <ion-select-option>$</ion-select-option>
+              <ion-select-option>€</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item lines="none" class="iselect-input">
+            <ion-input placeholder="0.00" value="1000"></ion-input>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="iselect mt-1">
+    <div class="fs-20">Message</div>
+    <div>
+      <ion-item lines="none" class="iselect-dd">
+        <ion-input placeholder="Send a short message ( Optional )" Value="Debt Complete"></ion-input>
+      </ion-item>
+    </div>
+  </div>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="ion-padding">
+    <ion-button class="btn-primary" onclick="location.href='/transferconfirm'">Continue</ion-button>
+  </ion-toolbar>
+</ion-footer>

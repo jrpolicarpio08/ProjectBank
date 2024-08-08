@@ -1,0 +1,35 @@
+.acc-btn,
+.tran-btn{
+    --indicator-color:#3880ff;
+    --color-checked: #ffff;
+}
+
+.accordion-top{
+    margin-top: 5px;
+    border: 3px solid #C3C3C3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 0px;
+  
+}
+.accordion-mid{
+    border: 3px solid #C3C3C3;
+    border-bottom: 0px;
+
+}
+.accordion-bot{
+    border: 3px solid #C3C3C3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  
+}
+.concern-input{
+    height: 250px;
+}
+.guide-tabs{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 3px solid #C3C3C3;
+    --min-height: 100px;
+    border-radius: 10px;
+}

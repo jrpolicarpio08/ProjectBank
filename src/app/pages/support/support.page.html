@@ -1,0 +1,145 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-header class="ion-no-border">
+    <ion-toolbar class="mmheader">
+      <ion-buttons slot="start">
+        <ion-button fill="clear" class="" onclick="location.href='/mainmenu'">
+          <ion-icon class="fs-25" name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title class="fs-25 ion-text-center">Support</ion-title>
+      <ion-buttons slot="end">
+        <ion-button fill="clear" class="">
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-segment mode="ios" [(ngModel)]="type">
+    <ion-segment-button value="all" class="tran-btn">
+      <ion-label>Transactions</ion-label>
+    </ion-segment-button>
+    <ion-segment-button mode="ios" value="mentions" class="acc-btn">
+      <ion-label>Account</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ng-container [ngSwitch]="type">
+    <!-- transaction section -->
+    <div class="" *ngSwitchCase="'all'">
+      <ion-searchbar mode="ios"></ion-searchbar>
+      <div>Common Question <ion-icon name="create-outline"></ion-icon></div>
+      <ion-accordion-group class="">
+
+        <ion-accordion value="first" class="accordion-top"  toggleIcon="none">
+          <ion-item slot="header" class="fs-15" lines="none">
+            <ion-label>Why has my transaction failed to process?</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <Div class="">test</Div>
+          </div>
+        </ion-accordion>
+
+        <ion-accordion value="second" class="accordion-mid" toggleIcon="none">
+          <ion-item slot="header" class="fs-15" lines="none">
+            <ion-label>I want to refund/cancel a transaction</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">Second Content</div>
+        </ion-accordion>
+
+        <ion-accordion value="third" class="accordion-mid" toggleIcon="none">
+          <ion-item slot="header">
+            <ion-label>Why is my transaction is on hold?</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">Second Content</div>
+        </ion-accordion>
+
+        <ion-accordion value="fourth" class="accordion-bot" toggleIcon="none">
+          <ion-item slot="header">
+            <ion-label>I want to use my vouchers</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content"></div>
+        </ion-accordion>
+        
+      </ion-accordion-group>
+      <div class="mt-1">Still having transaction problems?</div>
+      <ion-item class="input">
+        <ion-input placeholder="Enter Transaction ID"   maxlength="15" [clearInput]="true" [clearOnEdit]="true"></ion-input>
+      </ion-item>
+      <ion-item lines="none" class="concern-input input mb-1">
+        <ion-textarea placeholder="Describe your concerns here"></ion-textarea>
+      </ion-item>
+      <ion-button class="btn-primary">submit</ion-button>
+    </div>
+    <!-- transaction section -->
+
+    <!-- accounts section -->
+    <div class="" *ngSwitchCase="'mentions'">
+      <ion-searchbar mode="ios"></ion-searchbar>
+      <div>Common Question <ion-icon name="create-outline"></ion-icon></div>
+      <ion-accordion-group class="">
+        
+        <ion-accordion value="first" class="accordion-top"  toggleIcon="none">
+          <ion-item slot="header" class="fs-15" lines="none">
+            <ion-label>How to upgrade my account?</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <Div class="">test</Div>
+          </div>
+        </ion-accordion>
+
+        <ion-accordion value="second" class="accordion-mid" toggleIcon="none">
+          <ion-item slot="header" class="fs-15" lines="none">
+            <ion-label>I want to increase my account limit</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">Second Content</div>
+        </ion-accordion>
+
+        <ion-accordion value="third" class="accordion-mid" toggleIcon="none">
+          <ion-item slot="header">
+            <ion-label>How do i change my account information?</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">Second Content</div>
+        </ion-accordion>
+
+        <ion-accordion value="fourth" class="accordion-bot" toggleIcon="none">
+          <ion-item slot="header">
+            <ion-label>Someone is using my account</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">Second Content</div>
+        </ion-accordion>
+
+      </ion-accordion-group>
+      <div class="mt-1">Still having problems?</div>
+      <ion-row>
+
+        <ion-col>
+          <ion-item button lines="none" class="guide-tabs" (click)="livesupp()">
+            <div>
+              <div class="fs-30"><ion-icon name="flag-outline"></ion-icon></div>
+              <div class="mt-1">Live Support</div>
+            </div>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item button lines="none" class="guide-tabs" (click)="lockacc()">
+            <div>
+              <div class="fs-30"><ion-icon name="lock-closed-outline"></ion-icon></div>
+              <div class="mt-1">Lock Account</div>
+            </div>
+          </ion-item>
+        </ion-col>
+
+      </ion-row>
+      <div>Something on your mind?</div>
+      <ion-item lines="none" class="concern-input input mb-1">
+        <ion-textarea placeholder="Share it with us type it here"></ion-textarea>
+      </ion-item>
+      <ion-button class="btn-primary">submit</ion-button>
+    </div>
+    <!-- account section -->
+  </ng-container>
+
+</ion-content>

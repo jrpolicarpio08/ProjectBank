@@ -1,0 +1,117 @@
+swiper-container{
+    height: 130px;
+}
+.card-balance{
+    margin-top: 5px;
+    --background: #3880ff;
+    border-radius: 10px;
+    --min-height: 80px;
+}
+.pg-btn{
+    --min-height: 70px;
+    width: 70px;
+    --background: #3880ff;
+    --border-radius: 8px;
+    --color:#FFFFFF;
+    margin-right: 0.3rem;
+    .pg-icon{
+        font-size: 30px;
+    }
+    .pg-lbl{
+        font-size: 13px;
+    }
+}
+.transfer{
+    --padding-start: 10px;
+}
+.deposit{
+    --padding-start: 12px;
+}
+.vouchers{
+    --padding-start: 12px;
+    .pg-lbl{
+        font-size: 11px;
+    }
+}
+.bills{
+    --padding-start: 20px;
+}
+.cards{
+    --padding-start: 17px
+}
+.sub-btn{
+    --border-radius: 10px;
+    --min-height: 48px;
+    --background: #3880ff;
+    --color-activated: #FFFFFF;
+    min-width: 100%;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+// .transaction-container{
+//     background: #FFFFFF;
+//     border-top-left-radius: 10px;
+//     border-top-right-radius: 10px;
+// }
+// .transaction-items{
+//     --background: #FFFFFF;
+//     --padding-start: 0px;
+// }
+// .transaction-list{
+//     height: 150px;
+//     max-height: 100%;
+//     overflow-y: scroll;
+//     overflow-x: hidden;
+// }
+// @media only screen and (max-height: 799px){
+//     .transaction-list{
+//         height: 14rem;
+//     }
+// }
+// @media only screen and (min-height: 800px){
+//   .transaction-list{
+//        height: 17rem;
+//  }
+// }
+// @media only screen and (min-height: 895px){
+//     .transaction-list{
+//        height: 25rem;
+//     }
+// }
+@media only screen and (max-width: 371px) and (min-width: 340px) {
+    .pg-btn{
+    margin-right: 0.3rem;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 372px) {
+    .pg-btn{
+    margin-right: 0.3rem;
+}
+.acc-side-menu{
+    --padding-start: 0px;
+    margin-right: -10px;
+}
+}
+.acc-qr{
+    color:#000000;
+}
+.acc-status{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #3880ff;
+    height: 30px;
+    padding: 5px;
+    width: 110px;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+// .acc-status-icon{
+//     font-size: 25px;
+//     position: absolute;
+//     left: 31px;
+//     top: 12px;
+// }
+.side-menu-button{
+    --padding-start: 20px;
+}

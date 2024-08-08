@@ -1,0 +1,91 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-header class="ion-no-border">
+    <ion-toolbar class="mmheader">
+      <ion-buttons slot="start">
+        <ion-button fill="clear" class="" onclick="location.href='/mainmenu'">
+          <ion-icon class="fs-25" name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title class="fs-25 ion-text-center">Settings</ion-title>
+      <ion-buttons slot="end">
+        <ion-button fill="clear" class="">
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="settings-category ion-padding">
+    <div class="fs-20 fw-500">Language</div>
+    <div>
+      <ion-item lines="none" class="setting-iselect">
+        <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="English">
+          <ion-select-option>English</ion-select-option>
+          <ion-select-option>Tagalog</ion-select-option>
+          <ion-select-option>Cebuano</ion-select-option>
+          <ion-select-option>Ilocano</ion-select-option>
+          <ion-select-option>Hiligaynon</ion-select-option>
+          <ion-select-option>Bicolano</ion-select-option>
+          <ion-select-option>Waray</ion-select-option>
+          <ion-select-option>Kapampangan</ion-select-option>
+          <ion-select-option>Pangasinan</ion-select-option>
+          <ion-select-option>Maguindanao</ion-select-option>
+          <ion-select-option>Maranao</ion-select-option>
+          <ion-select-option>Tausug</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+  </div>
+  <div class="settings-category ion-padding">
+    <div class="fs-20 fw-500">Time Zone</div>
+    <div>
+      <ion-item lines="none" class="setting-iselect">
+        <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="PH (UTC+08)">
+          <ion-select-option>PH (UTC+08)</ion-select-option>
+          <ion-select-option>USA (GMT-4)</ion-select-option>
+          <ion-select-option>EU (GMT+2)</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+  </div>
+  <div class="settings-category ion-padding">
+    <div class="fs-20 fw-500">Date Format</div>
+    <div>
+      <ion-item lines="none" class="setting-iselect">
+        <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="mm/dd/yyyy">
+          <ion-select-option>mm/dd/yyyy</ion-select-option>
+          <ion-select-option>dd/mm/yyyy</ion-select-option>
+          <ion-select-option>yyyy/mm/dd</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+  </div>
+  <div class="settings-category ion-padding">
+    <div class="fs-20 fw-500">Verification</div>
+    <div>
+      <ion-item lines="none" class="setting-iselect">
+        <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="SMS">
+          <ion-select-option>SMS</ion-select-option>
+          <ion-select-option>E-Mail</ion-select-option>
+          <ion-select-option>Call</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+  </div>
+  <ion-item lines="none" class="mt-1">
+    <ion-toggle mode="ios" class="fs-20 fw-500" justify="space-between">Dark Mode</ion-toggle>
+  </ion-item>
+  <ion-item lines="none" class="">
+    <ion-toggle mode="ios" class="fs-20 fw-500" justify="space-between">Email Notifications</ion-toggle>
+  </ion-item>
+  <ion-item lines="none" class="">
+    <ion-toggle mode="ios" class="fs-20 fw-500" justify="space-between">Push Notifications</ion-toggle>
+  </ion-item>
+  <ion-item lines="none" class="">
+    <ion-toggle mode="ios" class="fs-20 fw-500" justify="space-between">Text Notifications</ion-toggle>
+  </ion-item>
+  <ion-item lines="none" class="">
+    <ion-toggle mode="ios" class="fs-20 fw-500" justify="space-between">Newsletter</ion-toggle>
+  </ion-item>
+</ion-content>

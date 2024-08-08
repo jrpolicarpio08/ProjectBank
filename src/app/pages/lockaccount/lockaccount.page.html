@@ -1,0 +1,26 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar >
+    <ion-buttons slot="end">
+      <ion-button id="present-alert" fill="clear" color="danger" >cancel</ion-button>
+       <ion-alert mode="ios" trigger="present-alert" class="custom-alert" header="Are you sure?" subHeader="Cancel lock account"
+       [buttons]="alertButtons"></ion-alert>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+  <div class="text-danger" style="font-size: 200px;">
+    <ion-icon name="warning-outline"></ion-icon>
+  </div>
+  <div class="fs-25">Temporarily lock your account</div>
+  <div class="fs-15 text-medium"><p>This profile will be locked, and you cannot make any transactions until this account is unlocked. A customer service representative will reach out in 24 hours. Do you still wish to continue?
+  </p></div>
+</ion-content>
+
+<ion-footer class="ion-padding ion-no-border">
+  <ion-toolbar>
+    <ion-button id="confirm-pass" color="danger" class="btn">Lock account</ion-button>
+    <ion-alert mode="ios" trigger="confirm-pass" class="custom-alert" header="Lock Confirm" subHeader="To continue please put your password below"
+    [buttons]="alertButtons1" [inputs]="alertInputs"></ion-alert>
+  </ion-toolbar>
+</ion-footer>

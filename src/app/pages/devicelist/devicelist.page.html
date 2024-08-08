@@ -1,0 +1,69 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="">
+    <ion-buttons slot="start">
+      <ion-button fill="clear" class="" onclick="location.href='/mainmenu'">
+        <ion-icon  class="fs-25" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="fs-25 ion-text-center">Devices</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" class="">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item detail="false" lines="full" class="device-container">
+    <div slot="start" class="d-flex">
+      <img class="device-icon" src="/assets/images/phone_icon.png" alt="qr code"> 
+      <div class="mt-1">
+        <div class="device-name text-primary">SAMSUNG Galaxy S24</div>
+        <div class="device-number text-medium">XX778 990 00XX</div>
+        <div class="device-log text-light">Logged in: 06/05/2024</div>
+      </div>
+    </div>
+    <div class="toggle-container">
+      <ion-toggle  mode="ios" alignment="end" [checked]="true"></ion-toggle>
+    </div>
+  </ion-item>
+  <ion-item detail="false" lines="full" class="device-container">
+    <div slot="start" class="d-flex">
+      <img class="device-icon" src="/assets/images/tablet_icon.png" alt="qr code"> 
+      <div class="mt-1">
+        <div class="device-name text-primary">XIAOMI PAD 6</div>
+        <div class="device-number text-medium">XX90 778 00XX</div>
+        <div class="device-log text-light">Logged in: 06/10/2024</div>
+      </div>
+    </div>
+    <div class="toggle-container">
+      <ion-toggle  mode="ios" alignment="end" [checked]="true"></ion-toggle>
+    </div>
+  </ion-item>
+  <ion-item detail="false" lines="full" class="device-container">
+    <div slot="start" class="d-flex">
+      <img class="device-icon" src="/assets/images/laptop_icon.png" alt="qr code"> 
+      <div class="mt-1">
+        <div class="device-name text-primary">MacBook Air 13</div>
+        <div class="device-number text-medium">XX.44.127.XX</div>
+        <div class="device-log text-light">Logged in: 06/10/2024</div>
+      </div>
+    </div>
+    <div class="toggle-container">
+      <ion-toggle  mode="ios" alignment="end" [checked]="true"></ion-toggle>
+    </div>
+  </ion-item>
+  <ion-item detail="false" lines="full" class="device-container">
+    <div slot="start" class="d-flex">
+      <img class="device-icon" src="/assets/images/computer_icon.png" alt="qr code"> 
+      <div class="mt-1">
+        <div class="device-name text-primary">John-Doe PC</div>
+        <div class="device-number text-medium">XX6.95.X.2XX</div>
+        <div class="device-log text-light">Logged in: 06/10/2024</div>
+      </div>
+    </div>
+    <div class="toggle-container">
+      <ion-toggle  mode="ios" alignment="end" [checked]="true"></ion-toggle>
+    </div>
+  </ion-item>
+</ion-content>

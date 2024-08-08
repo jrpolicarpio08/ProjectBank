@@ -1,0 +1,262 @@
+<ion-header class="ion-no-border" id="main-content">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button><ion-icon name="menu-outline"></ion-icon></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" scroll-y="false">
+    <div>
+        <ion-item details="false" lines="none" style="--padding-start:0px;">
+            <div class="fs-24">Hi, John Doe</div>
+            <div class="" slot="end">
+                <ion-avatar>
+                    <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+                </ion-avatar>
+            </div>
+        </ion-item>
+        <div class="text-medium">Accounts</div>
+    </div>
+    <swiper-container pagination="true" class="mb-1">
+        <swiper-slide class="vc">
+            <ion-item details="false" lines="none" class="card-balance text-white">
+                <div class="">
+                    <div class="">G-Cash</div>
+                    <div class="">#0810</div>
+                </div>
+                <div  slot="end" class="">
+                     <div class="">₱ 1,500</div>
+                    <div class="text-success">Active</div>
+                </div>
+            </ion-item>
+        </swiper-slide>
+
+        <swiper-slide>
+            <ion-item details="false" lines="none" class="card-balance text-white">
+                <div class="">
+                    <div class="">Paymaya</div>
+                    <div class="">#1800</div>
+                </div>
+                <div  slot="end" class="">
+                     <div class="">₱ 5,500</div>
+                    <div class="text-danger">Disabled</div>
+                </div>
+            </ion-item>
+        </swiper-slide>
+
+        <swiper-slide>
+            <ion-item details="false" lines="none" class="card-balance text-white">
+                <div class="">
+                    <div class="">Paypal</div>
+                    <div class="">#0081</div>
+                </div>
+                <div  slot="end" class="">
+                     <div class="">$ 500</div>
+                    <div class="text-warning">Inactive</div>
+                </div>
+            </ion-item>
+        </swiper-slide>
+
+    </swiper-container>
+    <div class="h-center">
+        <div>
+            <ion-item button detail="false" lines="none" class="pg-btn transfer" style="margin-left: 5px;" onclick="location.href='/transfer'">
+                <div class="ion-text-center">
+                    <ion-icon class="pg-icon" name="swap-horizontal-outline"></ion-icon>
+                    <div class="pg-lbl">Transfer</div>
+                </div>
+            </ion-item>
+        </div>
+        <div>
+            <ion-item button detail="false" lines="none" class="pg-btn deposit" onclick="location.href='/deposit'">
+                <div class="ion-text-center">
+                    <ion-icon class="pg-icon" name="download-outline"></ion-icon>
+                    <div class="pg-lbl">Deposit</div>
+                </div>
+            </ion-item>
+        </div>      
+        <div>
+            <ion-item button detail="false" lines="none" class="pg-btn vouchers">
+                <div class="ion-text-center">
+                    <ion-icon class="pg-icon" name="ticket-outline"></ion-icon>
+                    <div class="pg-lbl">Vouchers</div>
+                </div>
+            </ion-item>
+        </div>  
+        <div>
+            <ion-item button detail="false" lines="none" class="pg-btn bills">
+                <div class="ion-text-center">
+                    <ion-icon class="pg-icon" name="receipt-outline"></ion-icon>
+                    <div class="pg-lbl">Bills</div>
+                </div>
+            </ion-item>
+        </div>
+        <div>
+            <ion-item button detail="false" lines="none" class="pg-btn cards">
+                <div class="ion-text-center">
+                    <ion-icon class="pg-icon" name="wallet-outline"></ion-icon>
+                    <div class="pg-lbl">Cards</div>
+                </div>
+            </ion-item>
+        </div>
+    </div>
+    
+    <div class="mt-1">
+        <ion-item class="sub-btn" button detail="false" lines="none">
+            <div slot="start" class="">Subscriptions</div>
+            <ion-icon class="text-white" slot="end" name="pricetags-outline"></ion-icon>
+        </ion-item>
+    </div>
+    <div class="mb-1">
+        <ion-item class="sub-btn" detail="false" button lines="none">
+            <div slot="start" class="">Loans</div>
+            <ion-icon class="text-white" slot="end" name="newspaper-outline"></ion-icon>
+        </ion-item>
+    </div>
+
+    <!-- <div class="transaction-container ion-padding">
+        <div class="">Transactions</div>
+        <ion-list class="transaction-list">
+                <ion-item class="transaction-items" lines="none" detail="false">
+                    <div class="">
+                        <div slot="start" class="text-medium fs-12">Purchased on</div>
+                        <div slot="start" class="fs-14 text-capitalize">SQUARE ENIX</div>
+                    </div>
+                    <div slot="end" class="">
+                        <div slot="end" class="text-medium fs-12">20 mar 2024</div>
+                        <div class="text-danger fs-14">- ₱500.00</div>                
+                    </div>
+                </ion-item>
+                <ion-item class="transaction-items" lines="none" detail="false">
+                    <div class="">
+                        <div slot="start" class="text-medium fs-12">Received money from</div>
+                        <div slot="start" class="fs-14 text-capitalize">JUAN DELA CRUZ</div>
+                    </div>
+                    <div slot="end" class="">
+                        <div slot="end" class="text-medium fs-12">10 mar 2024</div>
+                        <div class="text-success fs-14">₱4000.00</div>                
+                    </div>
+                </ion-item>
+                <ion-item class="transaction-items" lines="none" detail="false">
+                    <div class="">
+                        <div slot="start" class="text-medium fs-12">Purchased on</div>
+                        <div slot="start" class="fs-14 text-capitalize">STEAM</div>
+                    </div>
+                    <div slot="end" class="">
+                        <div slot="end" class="text-medium fs-12">08 mar 2024</div>
+                        <div class="text-danger fs-14">- ₱2000.00</div>                
+                    </div>
+                </ion-item>
+                <ion-item class="transaction-items" lines="none" detail="false">
+                    <div class="">
+                        <div slot="start" class="text-medium fs-12">Received money from</div>
+                        <div slot="start" class="fs-14 text-capitalize">JANE DOE</div>
+                    </div>
+                    <div slot="end" class="">
+                        <div slot="end" class="text-medium fs-12">10 mar 2024</div>
+                        <div class="text-success fs-14">₱1500.00</div>                
+                    </div>
+                </ion-item>
+                <ion-item class="transaction-items" lines="none" detail="false">
+                    <div class="">
+                        <div slot="start" class="text-medium fs-12">Purchased on</div>
+                        <div slot="start" class="fs-14 text-capitalize">FOOD PANDA</div>
+                    </div>
+                    <div slot="end" class="">
+                        <div slot="end" class="text-medium fs-12">08 mar 2024</div>
+                        <div class="text-danger fs-14">- ₱728.00</div>                
+                    </div>
+                </ion-item>
+                <ion-item class="transaction-items" lines="none" detail="false">
+                    <div class="">
+                        <div slot="start" class="text-medium fs-12">Purchased on</div>
+                        <div slot="start" class="fs-14 text-capitalize">GRAB FOOD</div>
+                    </div>
+                    <div slot="end" class="">
+                        <div slot="end" class="text-medium fs-12">08 mar 2024</div>
+                        <div class="text-danger fs-14">- ₱2000.00</div>                
+                    </div>
+                </ion-item>
+                <ion-item class="transaction-items" lines="none" detail="false">
+                    <div class="">
+                        <div slot="start" class="text-medium fs-12">Purchased on</div>
+                        <div slot="start" class="fs-14 text-capitalize">7-eleven</div>
+                    </div>
+                    <div slot="end" class="">
+                        <div slot="end" class="text-medium fs-12">08 mar 2024</div>
+                        <div class="text-danger fs-14">- ₱150.00</div>                
+                    </div>
+                </ion-item>
+                <ion-item class="transaction-items" lines="none" detail="false">
+                    <div class="">
+                        <div slot="start" class="text-medium fs-12">Received money from</div>
+                        <div slot="start" class="fs-14 text-capitalize">JANE DOE</div>
+                    </div>
+                    <div slot="end" class="">
+                        <div slot="end" class="text-medium fs-12">10 mar 2024</div>
+                        <div class="text-success fs-14">₱500.00</div>                
+                    </div>
+                </ion-item>
+        </ion-list>
+    </div> -->
+
+</ion-content>
+
+<ion-menu mode="md" contentId="main-content">
+    <ion-content>
+        <div class="ion-padding">
+            <ion-item lines="none" class="acc-side-menu">
+                <ion-menu-toggle slot="start">
+                    <ion-icon  class="fs-25" name="arrow-back-outline"></ion-icon>
+                </ion-menu-toggle>
+                <div class="acc-status">Verified</div>
+                <div slot="end" class="text-dark">
+                    <a href="userqr" class="acc-qr" > 
+                        <ion-icon class="fs-25" name="qr-code-outline"></ion-icon>
+                    </a>
+                </div>
+            </ion-item>
+        </div>
+        <div class="ion-text-center">
+            <div class="text-uppercase fs-20">john doe</div>
+            <div class="text-uppercase fs-10 text-gray">+63 778 990 0001</div>
+        </div>
+        <ion-item button lines="none" class="mt-1 side-menu-button" detail="true" onclick="location.href='/userprofile'">
+            <div class="d-flex">
+                <ion-icon slot="start" class="text-dark fs-25" name="person-outline"></ion-icon>
+                <div class="ml-1 fs-20">Profile</div>
+            </div>
+        </ion-item>
+        <ion-item button lines="none" class="side-menu-button" detail="true" onclick="location.href='/accountlimits'">
+            <div class="d-flex">
+                <ion-icon slot="start" class="text-dark fs-25" name="pie-chart-outline"></ion-icon>
+                <div class="ml-1 fs-20">Account Limits</div>
+            </div>
+        </ion-item>
+        <ion-item button lines="none" class="side-menu-button" detail="true" onclick="location.href='/devicelist'">
+            <div class="d-flex">
+                <ion-icon slot="start" class="text-dark fs-25" name="phone-portrait-outline"></ion-icon>
+                <div class="ml-1 fs-20">Authorize Devices</div>
+            </div>
+        </ion-item>
+        <ion-item button lines="none" class="side-menu-button" detail="true"  onclick="location.href='/support'">
+            <div class="d-flex">
+                <ion-icon slot="start" class="text-dark fs-25" name="help-circle-outline"></ion-icon>
+                <div class="ml-1 fs-20">Support</div>
+            </div>
+        </ion-item>
+        <ion-item button lines="none" class="side-menu-button" detail="true" onclick="location.href='/settings'">
+            <div class="d-flex">
+                <ion-icon slot="start" class="text-dark fs-25" name="settings-outline"></ion-icon>
+                <div class="ml-1 fs-20">Settings</div>
+            </div>
+        </ion-item>
+        <div class="">
+
+        </div>
+    </ion-content>
+    <ion-footer class="ion-padding ion-no-border" style="background: #eeeded;">
+        <ion-button class="btn-primary" expand="block" onclick="location.href='/login'">logout</ion-button>
+    </ion-footer>
+</ion-menu>

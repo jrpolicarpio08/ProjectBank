@@ -1,0 +1,77 @@
+<ion-header>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" scroll-y="false">
+  <div class="mt-2 fs-36 fw-700">Register</div>
+  <div class="mb-3 fs-14 text-medium">Be a member today</div>
+  <div class="mt-1 fs-15 text-primary">Full Name</div>
+  <ion-item lines="none" class="ion-no-border input">
+    <ion-input no-lines class="" placeholder="Full Name"></ion-input>
+    <ion-icon slot="end" name="person-outline"></ion-icon>
+  </ion-item>
+  <div class="mt-1 fs-15 text-primary">Email</div>
+  <ion-item lines="none" class="ion-no-border input">
+    <ion-input no-lines class="" placeholder="E-mail"></ion-input>
+    <ion-icon slot="end" name="mail-outline"></ion-icon>
+  </ion-item>
+    <div class="mt-1 fs-15 text-primary">Mobile Number</div>
+  <ion-item lines="none" class="ion-no-border input">
+    <ion-input type="tel" no-lines class="" placeholder="Mobile Number"></ion-input>
+    <ion-icon slot="end" name="call-outline"></ion-icon>
+  </ion-item>
+  <div class="mt-1 fs-15 text-primary">Password</div>
+  <ion-item lines="none" class="ion-no-border input">
+    <ion-input type="password" no-lines class="" placeholder="Create password"></ion-input>
+    <ion-icon slot="end" name="lock-closed-outline"></ion-icon>
+  </ion-item>
+  <div class="mt-1 fs-15 text-primary">Confirm Password</div>
+  <ion-item lines="none" class="ion-no-border input">
+    <ion-input type="password" no-lines class="" placeholder="Confirm password"></ion-input>
+    <ion-icon slot="end" name="lock-closed-outline"></ion-icon>
+  </ion-item>
+  <div class="d-flex mt-1 mb-1 ion-text-center">
+    <ion-checkbox mode="md"></ion-checkbox>
+    <div>&nbsp;I accept the Terms of Use & Privacy Policy</div>
+  </div>
+  <div color="primary" detail="false" lines="none" class="btn-primary ion-activatable ripple-parent" onclick="location.href='/verifyemail'">
+    <div class="m-auto d-flex">
+      <div class="btn-text">Register</div>
+    </div>  
+    <ion-ripple-effect></ion-ripple-effect>
+  </div>
+  <ion-row class="mb-1">
+    <ion-col>
+      <div class="separator"></div>
+    </ion-col>
+    <ion-col size="2">
+      <div class="ion-text-center text-medium">Or</div>
+    </ion-col>
+    <ion-col>
+      <div class="separator"></div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-item detail="false" lines="none" button class="btn-socmed">
+        <div class="m-auto d-flex">
+          <div class="btn-logo-google"><ion-icon src="/assets/icons/icon-google.svg"></ion-icon></div>
+          <div class="btn-text">Google</div>
+        </div>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <ion-item detail="false" lines="none" button class="btn-socmed">
+        <div class="m-auto d-flex">
+          <div class="btn-logo text-primary"><ion-icon name="logo-facebook" class="btn-logo"></ion-icon></div>
+          <div class="btn-text">Facebook</div>
+        </div>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer [translucent]="true" class="ion-no-border">
+  <ion-toolbar class="footer">
+    <div class="ion-text-center mb-2 reg-btn">Already have an account? <a href="login" class="reg-btn">Login here</a></div>
+  </ion-toolbar>
+</ion-footer>

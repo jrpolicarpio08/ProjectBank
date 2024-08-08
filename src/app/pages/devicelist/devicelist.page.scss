@@ -1,0 +1,18 @@
+.device-icon{
+    height: 100px;
+    width: 100px;
+    padding-right: 10px;
+}
+.device-container{
+    --min-height: 130px;
+}
+.test{
+    display: flex;
+}
+.device-number,
+.device-name{
+    margin-bottom: 5px;
+}
+.toggle-container{
+   margin-left: 10px;
+}

@@ -1,0 +1,27 @@
+.fp-btn{
+    color: red;
+    text-decoration: none;
+}
+.reg-btn{
+    text-decoration: none;
+}
+.btn-socmed{
+    height: 48px;
+    border: 2px solid #d6d7de;
+    border-radius: 10px;
+    .btn-logo{
+        font-size: 25px;
+        margin-top: 3px;
+        margin-right: 5px;
+    }
+    .btn-logo-google{
+        font-size: 25px;
+        margin-top: 7px;
+        margin-right: 7px;
+    }
+    .btn-text{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+

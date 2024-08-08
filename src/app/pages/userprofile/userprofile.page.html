@@ -1,0 +1,66 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="primary-header">
+    <ion-buttons slot="start">
+      <ion-button fill="clear" onclick="location.href='/mainmenu'">
+        <ion-icon class="text-white fs-25" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="fs-25 ion-text-center text-white">User Profile</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon class="text-white fs-25" name="share-social-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-text-center">
+    <div class="profile-section ion-padding">
+      <div class="user-pfp-container">
+        <ion-avatar class="user-pfp">
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5">
+    <ion-item lines="none" class="acc-info">
+      <ion-icon class="text-primary fs-30" name="person-outline"></ion-icon>
+      <div class="ml-3 fs-22 text-medium">John Doe</div>
+    </ion-item>
+    <ion-item lines="none" class="acc-info mt-1">
+      <ion-icon class="text-primary fs-30" name="calendar-clear-outline"></ion-icon>
+      <div class="ml-3 fs-22 text-medium">01/08/2000</div>
+    </ion-item>
+    <ion-item lines="none" class="acc-info mt-1">
+      <ion-icon class="text-primary fs-30" name="phone-portrait-outline"></ion-icon>
+      <div class="ml-3 fs-22 text-medium">+63 778 990 0001</div>
+    </ion-item>
+    <ion-item lines="none" class="acc-info mt-1">
+      <ion-icon class="text-primary fs-30" name="mail-outline"></ion-icon>
+      <div class="ml-3 fs-22 text-medium">johndoe&#64;gmail.com</div>
+    </ion-item>
+    <ion-item lines="none" class="acc-info mt-1">
+      <ion-icon class="text-primary fs-30" name="flag-outline"></ion-icon>
+      <div class="ml-3 fs-22 text-medium">010 080 000</div>
+      <ion-button id="trigger-button" class="text-medium" slot="end" fill="clear">
+        <ion-icon class="fs-40" name="help-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-item> 
+    <ion-popover side="top" size="auto" trigger="trigger-button">
+      <ng-template>
+        <ion-content class="ion-padding">
+          <div class="ion-text-center">Account recovery code</div>
+        </ion-content>
+      </ng-template>
+    </ion-popover>
+    <div class="ion-padding">
+      <ion-button expand="block" class="btn-primary" (click)="edit()">Edit Profile</ion-button>
+      <ion-button expand="block" class="btn-primary" (click)="changepass()">Change Password</ion-button>
+      <ion-button expand="block" color="danger" class="btn" (click)="deleteacc()">Delete Account</ion-button>
+    </div>
+  </div>
+
+</ion-content>
+

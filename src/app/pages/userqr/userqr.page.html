@@ -1,0 +1,27 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar class="qr-header">
+    <ion-buttons>
+      <ion-button onclick="location.href='/mainmenu'">
+        <ion-icon  class="fs-25" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class=""></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="qr-section ion-padding ion-text-center ">
+    <div class="text-uppercase mt-5 fs-18 fw-500">SCAN THIS QR CODE</div>
+    <div class="mt-1">
+      <img class="user-qr" src="/assets/images/qr-code.png" alt="qr code"> 
+    </div>
+    <div class="text-uppercase mt-2 fs-18 fw-500">john doe</div>
+    <div class="fs-16">johndoe&#64;gmail.com</div>
+  </div>
+  <div class="ion-padding ion-text-center">
+    <div class="mt-1 text-medium fw-500">Try BARCODE</div>
+    <div class="mt-1">
+      <img class="user-barcode" src="/assets/images/barcode.png" alt="bar code"> 
+    </div>
+  </div>
+</ion-content>

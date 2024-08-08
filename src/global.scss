@@ -18,9 +18,109 @@
 @import "@ionic/angular/css/typography.css";
 @import "@ionic/angular/css/display.css";
 
+@import '../src/theme/helpers.scss';
+
 /* Optional CSS utils that can be commented out */
 @import "@ionic/angular/css/padding.css";
 @import "@ionic/angular/css/float-elements.css";
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+@font-face {   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+@font-face {   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+}
+@font-face {   
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: bold;
+    src: url('./assets/fonts/Roboto-Italic.ttf');
+}
+@font-face {   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./assets/fonts/Roboto-Light.ttf');
+}
+@font-face {   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/Roboto-Medium.ttf');
+}
+ion-item,
+ion-toolbar,
+ion-footer,
+ion-content{
+    font-family: 'Roboto';
+    --background: #f6f5f5;
+}
+.input{
+    margin-top: 8px;
+    --padding-start: 10px;
+    border: 2px solid #b2b2b3;
+    border-radius: 10px;
+}
+.separator{
+    margin-top: 8px;
+    border: 1px solid #d9d9f0;
+}
+.footer{
+    --background: #f6f5f5;
+}
+.btn-primary{
+    height: 48px;
+    border-radius: 10px ;
+    background-color: #3880ff;
+    margin: 0 auto;
+    display: flex;
+    color: #ffff;
+    margin-bottom: 10px;
+    --border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+.btn{
+    height: 48px;
+    border-radius: 10px ;
+    margin: 0 auto;
+    display: flex;
+    color: #ffff;
+    margin-bottom: 10px;
+    --border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+.verify-input {
+    background:#F6F7F9;
+    border:1px solid #F6F7F9;
+    border-radius: 10px;
+    width: 60px;
+    height: 80px;
+    text-align: center;
+    box-shadow: 0px 5px 0px 0px rgba(0 0 0 / 25%);
+    margin-right: 0.5rem;
+}
+@media only screen and (max-width: 371px) and (min-width: 340px) {
+    .verify-input {
+    margin-right: 0.3rem;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 372px) {
+    .verify-input {
+    margin-right: 0.5rem;
+}
+}
+.primary-header{
+    --background: #3880ff;
+    color: #ffff;
+}

@@ -1,0 +1,54 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="mmheader">
+    <ion-buttons slot="start">
+      <ion-button fill="clear" class="" (click)="close()">
+        <ion-icon  class="fs-25" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="fs-25 ion-text-center">Delete my account</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" class="">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-item details="false" lines="full" class="acc-item text-white">
+    <div slot="start">
+      <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+    </div>
+    <div>
+        <div class="text-dark">John Doe</div>
+        <div class="text-medium">johndoe&#64;gmail.com</div>
+    </div>
+  </ion-item>
+
+  <div class="mt-2 text-dark fs-22 fw-700">We are sorry to see you go!</div>
+  <div class="text-medium fs-15">
+     <p>You are about to delete your ProjectBank account, Your account and username will no longer be active.</p>
+  </div> 
+
+  <div class="mt-2 text-dark fs-22 fw-700">Note</div>
+  <div class="text-medium fs-15">
+    <p>When we delete your account, we may retain certain informatiopn for legitimate business purposes or to comply with legal or regulatory obligations, including legal claims, know your customers (KYC) and interantional anti-money laundering (AML) regularions. when we retain such data, we do so in ways designed to prevent its use for other purposes.</p>
+  </div> 
+
+  <div class="mt-2 text-dark fs-22 fw-700">Confirm your password</div>
+  <div class="text-medium fs-15">
+    <p>In order to complete the delete process enter your password associated with your account below. </p>
+  </div>
+
+  <ion-item lines="none" class="mt-1 input">
+    <ion-input type="password" no-lines placeholder="Password" value="JD123"></ion-input>
+    <ion-icon slot="end" name="lock-closed-outline"></ion-icon>
+  </ion-item>
+
+  <div class="mt-1">
+    <ion-button expand="block" color="danger" class="btn" onclick="location.href='/deleteaccountsuccess'">Delete Account</ion-button>
+  </div>
+
+</ion-content>

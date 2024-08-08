@@ -1,0 +1,29 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar class="footer">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+  <div class="mb-5">
+    <div class="phone-container"></div>
+    <ion-icon class="phone-icon" name="paper-plane-outline"></ion-icon>
+  </div>
+  <div class="fs-24">Check your email</div>
+  <div class="text-medium fs-18 mt-2">to confirm your email address,</div>
+  <div class="text-medium fs-18">click the link in the email </div>
+  <div class="text-medium mb-2">we sent you.</div>
+  <!-- <div color="primary" detail="false" lines="none" class="btn-primary ion-activatable ripple-parent" onclick="location.href='/emailverified'">
+    <div class="m-auto d-flex">
+      <div class="btn-text">Open email app</div>
+    </div>  
+    <ion-ripple-effect></ion-ripple-effect>
+  </div> -->
+  <ion-button expand="block" class="btn-primary" onclick="location.href='/mainmenu'">
+    <div class="test">Verify</div>
+  </ion-button>
+</ion-content>
+<ion-footer [translucent]="true" class="ion-no-border">
+  <ion-toolbar class="footer">
+    <div class="ion-text-center mb-2 reg-btn">Already have an account? <a href="login" class="reg-btn">Login here</a></div>
+  </ion-toolbar>
+</ion-footer>

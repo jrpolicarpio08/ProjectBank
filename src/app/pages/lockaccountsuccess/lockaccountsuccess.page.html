@@ -1,0 +1,29 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="ion-text-center">
+    <div class="mt-1 text-primary" style="font-size: 200px;">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+     </div>
+     <div class="fs-25">Account Locked</div>
+     <div class="fs-1 text-medium">
+      <p>You have successfully locked your account. A customer service representative will be reaching out to you for the next 24 hours. 
+      </p>
+     </div>
+  </div>
+  <ion-item details="false" lines="none" class="acc-item mt-1 mb-2 text-white">
+    <div slot="start" class="lock-container"> 
+      <ion-icon name="lock-closed-outline"></ion-icon>
+    </div>
+    <div>
+        <div class="text-dark">
+          Account Locked July 3, 2024 <br> 
+          <span class="text-medium fs-14">Your account will be unlocked after the issue is solved.</span> 
+        </div>
+    </div>
+  </ion-item>
+  <ion-button class="btn-primary" onclick="location.href='/login'">Return to home</ion-button>
+</ion-content>

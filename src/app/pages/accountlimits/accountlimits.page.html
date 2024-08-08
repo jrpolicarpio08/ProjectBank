@@ -1,0 +1,88 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="mmheader">
+    <ion-buttons slot="start">
+      <ion-button fill="clear" class="" onclick="location.href='/mainmenu'">
+        <ion-icon  class="fs-25 text-dark" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="fs-25 ion-text-center">Account Limits</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [disabled]="true" fill="clear" class="">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-segment mode="ios" [(ngModel)]="type">
+    <ion-segment-button value="all" class="daily-btn">
+      <ion-label>Daily</ion-label>
+    </ion-segment-button>
+    <ion-segment-button mode="ios" value="mentions" class="monthly-btn">
+      <ion-label>Monthly</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ng-container [ngSwitch]="type">
+    <div class="" *ngSwitchCase="'all'">
+      <div class="limit-container mt-1 ion-padding">
+        <div class="fs-22">Cash in</div>
+        <div class="fs-12 text-medium">Card and Cash in Partners</div>
+        <div class="mt-2 text-primary">₱500,000.00 remaining</div>
+        <div class="bar-container">
+          <div class="user-value" style="width: 100%;"></div>
+          <div class="max-value"></div>
+        </div>
+        <div class="fs-12 text-medium">₱0.00 used(Max: ₱500,000.00)</div>
+      </div>
+      <div class="limit-container mt-1 ion-padding">
+        <div class="fs-22">Send Money</div>
+        <div class="fs-12 text-medium">To other Maya users</div>
+        <div class="mt-2 text-primary">₱500,000.00 remaining</div>
+        <div class="bar-container">
+          <div class="user-value" style="width: 100%;"></div>
+          <div class="max-value"></div>
+        </div>
+        <div class="fs-12 text-medium">₱0.00 used(Max: ₱500,000.00)</div>
+      </div>
+      <div class="notif">
+        <div class="text-primary"><ion-icon name="alert-circle"></ion-icon></div>
+        <div class="fs-14 text-medium">&nbsp;Limits will reset tommorrow.</div>
+      </div>
+    </div>
+
+    <div class="" *ngSwitchCase="'mentions'">
+      <div class="limit-container mt-1 ion-padding">
+        <div class="fs-22">Cash in</div>
+        <div class="fs-12 text-medium">Card and Cash in Partners</div>
+        <div class="mt-2 text-primary">₱498,000.00 remaining</div>
+        <div class="bar-container">
+          <div class="user-value" style="width: 98%;"></div>
+          <div class="max-value"></div>
+        </div>
+        <div class="fs-12 text-medium">₱0.00 used(Max: ₱500,000.00)</div>
+      </div>
+      <div class="limit-container mt-1 ion-padding">
+        <div class="fs-22">Money Out</div>
+        <div class="fs-12 text-medium">ATM Withdrawal and via Smart Money</div>
+        <div class="mt-3 text-primary">No month amount limit</div>
+        <div class="fs-12 text-medium">58 transactions left (max: 60)</div>
+      </div>
+      <div class="limit-container mt-1 ion-padding">
+        <div class="fs-22">Transfer to Bank</div>
+        <div class="fs-12 text-medium">via smart money and instapay</div>
+        <div class="mt-2 text-primary">₱500,000.00 remaining</div>
+        <div class="bar-container">
+          <div class="user-value" style="width: 100%;"></div>
+          <div class="max-value"></div>
+        </div>
+        <div class="fs-12 text-medium">₱0.00 used(Max: ₱500,000.00)</div>
+      </div>
+      <div class="notif">
+        <div class="text-primary"><ion-icon name="alert-circle"></ion-icon></div>
+        <div class="fs-14 text-medium">&nbsp;Limits will reset on the first day next month.</div>
+      </div>
+    </div>
+  </ng-container>
+  
+</ion-content>

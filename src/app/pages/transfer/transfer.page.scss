@@ -1,0 +1,12 @@
+.iselect{
+    height: 100px;
+}
+
+.iselect-input,
+.iselect-dd{
+    margin-top: 10px;
+    border: 2px solid #b2b2b3;
+    border-radius: 10px;
+    --padding-start: 20px;
+    height: 55px
+}
