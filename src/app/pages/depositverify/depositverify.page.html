@@ -1,0 +1,28 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="fs-30 fw-500">Confirm Details</div>
+  <div class="fs-16 text-medium">Ensure all information is correct.</div>
+  <div class="mt-3 trans-dets ion-padding">
+    <div class="mb-1 fs-24">Details</div>
+    <div>
+      <div class="fs-18">Date <span class="fs-18" style="float: right">07/13/2024</span></div>
+      <div class="fs-18 mt-1">Account owner <span class="fs-18" style="float: right">John Doe</span></div>
+      <div class="fs-18 mt-1">To account <span class="fs-18" style="float: right">4118 9838 0867 5175</span></div>
+      <div class="fs-18 mt-1">Account type <span class="fs-18" style="float: right">Paypal</span></div>
+      <div class="fs-18 mt-1">Service charge <span class="fs-18" style="float: right">₱ 50.00</span></div>
+    </div>
+    <div class="mt-1 total-amt">
+      <div class="fs-18 mt-1">Total Amount <span class="fs-18" style="float: right">₱ 1050.00</span></div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="ion-padding">
+    <ion-button class="btn-primary">Confirm</ion-button>
+    <ion-button color="danger" class="btn" onclick="location.href='/deposit'">Cancel</ion-button>
+  </ion-toolbar>
+</ion-footer>
