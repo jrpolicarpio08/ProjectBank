@@ -5,20 +5,57 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
   <div class="fs-30 fw-500">Confirm Details</div>
-  <div class="fs-16 text-medium">Ensure all information is correct.</div>
-  <div class="mt-3 trans-dets ion-padding">
-    <div class="mb-1 fs-24">Details</div>
-    <div>
-      <div class="fs-18">Date <span class="fs-18" style="float: right">07/13/2024</span></div>
-      <div class="fs-18 mt-1">From bank account <span class="fs-18" style="float: right">Paypal</span></div>
-      <div class="fs-18 mt-1">To bank account <span class="fs-18" style="float: right">8467 3211 9998 7551</span></div>
-      <div class="fs-18 mt-1">Bank account owner <span class="fs-18" style="float: right">Joaqin Bordado</span></div>
-      <div class="fs-18 mt-1">Message <span class="fs-18" style="float: right">Debt complete</span></div>
-    </div>
-    <div class="mt-1 total-amt">
-      <div class="fs-18 mt-1">Total Amount <span class="fs-18" style="float: right">₱ 1000.00</span></div>
-    </div>
+  <div class="fs-16 text-medium">Ensure all informations are correct.</div>
+  <div class="mt-1 ion-padding transfer-id ">
+    <div class="fs-18 fw-500">Transfer in progress&nbsp;<ion-spinner class="spinner" color="primary"></ion-spinner></div>
+    <div class="fs-14 text-medium">To continue confirm the details below and click confirm.</div>
+    <div class="fs-15 mt-1">Transfer ID:&nbsp;&nbsp;TR4N53R&nbsp;&nbsp;<a id="open-toast"><ion-icon name="copy-outline"></ion-icon></a></div>
+    <ion-toast position="top" trigger="open-toast" message="Copied!" [duration]="5000"></ion-toast>
+    <div class="fs-15">Date:&nbsp;&nbsp;08/16/2024</div>
   </div>
+  <div class="fs-18 mt-2 fw-500">Transfer Summary</div>
+  <div>
+    <ion-item lines="none" class="transfer-info">
+      <ion-icon class="fs-40 text-primary" name="wallet-outline"></ion-icon>
+      <div style="margin-left: 10px;" class="fs-16">
+        <div class="fw-500">From bank account</div>
+        <div>Paypal:&nbsp;4118 9838 0867 5175</div>
+      </div>
+    </ion-item>
+  </div>
+  <div>
+    <ion-item lines="none" class="transfer-info">
+      <ion-icon class="fs-40 text-primary" name="briefcase-outline"></ion-icon>
+      <div style="margin-left: 10px;" class="fs-16">
+        <div class="fw-500">To bank account</div>
+        <div>BDO:&nbsp;8467 3211 9998 7551</div>
+      </div>
+    </ion-item>
+  </div>
+  <div>
+    <ion-item lines="none" class="transfer-info">
+      <ion-icon class="fs-40 text-primary" name="person-outline"></ion-icon>
+      <div style="margin-left: 10px;" class="fs-16">
+        <div class="fw-500">Account Owner</div>
+        <div>Joaqin Bordado</div>
+      </div>
+    </ion-item>
+  </div>
+  <div>
+    <ion-item lines="none" class="transfer-info">
+      <ion-icon class="fs-40 text-primary" name="mail-outline"></ion-icon>
+      <div style="margin-left: 10px;" class="fs-16">
+        <div class="fw-500">Message</div>
+        <div>Debt complete</div>
+      </div>
+    </ion-item>
+  </div>
+  <div class="mt-1 transfer-amnt">
+    <div class="mt-1 fs-18 fw-500">Payment Summary</div>
+    <div style="margin-top:10px">Transfer Amount<span class="" style="float:right">₱ 1000.00</span></div>
+    <div>Service Charge<span class="" style="float:right">₱ 20.00</span></div>
+  </div>
+  <div class="fs-18 fw-500 mt-1">Total Amount<span style="float:right">₱ 1020.00</span></div>
 </ion-content>
 <ion-footer class="ion-no-border">
   <ion-toolbar class="ion-padding">

@@ -1,13 +1,72 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>depositscan</ion-title>
+  
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">depositscan</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="ion-text-center">
+    <div class="fs-19 fw-500">Please show the code below to the partner agent for payment</div>
+  </div>
+  <div class="mt-2 deposit-id-container">
+    <div class="text-uppercase fw-500">Deposit ID Number</div>
+    <div>Date Created: <span class="fw-500"> 08-16-24 </span><span style="float:right">Valid Until: <span class="fw-500"> 08-17-24 </span></span></div>
+    <div class="fw-800 fs-50">D3P051T</div>
+  </div>
+  <div class="ion-text-center deposit-info-container">
+    <div class="mt-1">
+      <ion-item lines="none" class="deposit-info">
+        <ion-icon class="fs-40 text-primary" name="wallet-outline"></ion-icon>
+        <div style="margin-left: 10px;" class="fs-16">
+          <div class="fw-500">To bank account</div>
+          <div>Paypal:&nbsp;4118 9838 0867 5175</div>
+        </div>
+      </ion-item>
+    </div>
+    <div>
+      <ion-item lines="none" class="deposit-info">
+        <ion-icon class="fs-40 text-primary" name="cash-outline"></ion-icon>
+        <div style="margin-left: 10px;" class="fs-16">
+          <div class="fw-500">Amount</div>
+          <div>₱ 1020.00</div>
+        </div>
+      </ion-item>
+    </div>
+  </div>
+  <div class="ion-text-center">
+    <div class="mt-3">
+      <img src="/assets/images/barcode.png" alt="bar code" id="dcomplete">
+    </div>
+  </div>
+  <div class="ion-padding text-medium fw-500 mb-1">
+    <div class="mt-1">A 2% Convenience Fee will be deducted from the deposit amount but this free will be returned via cashback or voucher so you can enjoy FREE cash in up to ₱8,000 per month.</div>
+    <div class="mt-1">Always check for a confimation notification before leaving the establishment to ensure the transaction is completed.</div>
+    <div class="mt-1">Save the physical receipt or take a screenshot of the transaction, this can be used as evidence if you encounter a problem.</div>
+  </div>
+
+    <!-- modal section -->
+    <ion-modal id="dcomplete" trigger="dcomplete" [initialBreakpoint]="0.6" [breakpoints]="[0.6]">
+      <ng-template>
+        <ion-content class="ion-padding">
+          <div class="ion-text-center">
+            <div class="">
+              <ion-icon class="text-primary mt-1" style="font-size: 150px;" name="checkmark-circle"></ion-icon>
+              <div class="fs-24 fw-500">Deposit Complete</div>
+              <div class="fs-18 text-medium">16th of August, 2024</div>
+              <div class="mt-1 fw-500 fs-30">+ ₱1000.00</div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <div class="fs-18 mt-2">To <span class="fs-18" style="float: right;">John Doe</span></div>
+            <div class="fs-18 mt-1">Bank Account <span class="fs-18" style="float: right;">**** **** **** 5175</span></div>
+            <div class="mt-2">
+              <ion-button class="btn-primary" onclick="location.href='/mainmenu'">Done</ion-button>
+            </div>
+          </div>
+        </ion-content>
+      </ng-template>
+    
+    </ion-modal>
+    <!-- modal section -->
+
 </ion-content>

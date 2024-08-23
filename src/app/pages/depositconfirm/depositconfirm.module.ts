@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DepositverifyPageRoutingModule } from './depositverify-routing.module';
+import { DepositconfirmPageRoutingModule } from './depositconfirm-routing.module';
 
-import { DepositverifyPage } from './depositverify.page';
+import { DepositconfirmPage } from './depositconfirm.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DepositverifyPageRoutingModule
+    DepositconfirmPageRoutingModule
   ],
-  declarations: [DepositverifyPage]
+  declarations: [DepositconfirmPage]
 })
-export class DepositverifyPageModule {}
+export class DepositconfirmPageModule {}

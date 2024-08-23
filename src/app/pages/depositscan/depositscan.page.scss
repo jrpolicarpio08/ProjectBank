@@ -1,0 +1,23 @@
+.deposit-info{
+    margin-top: 8px;
+    --padding-start: 0px;
+}
+.deposit-id-container{
+    padding-top: 5px;
+    border-top:  2px solid #000;
+    border-bottom:  2px solid #000;
+    min-height: 100px;
+}
+.deposit-info-container{
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 40px;
+}
+.reminder-container{
+    border: 1px solid #000;
+    border-radius: 10px;
+    min-height: 300px;
+}
+ion-modal#dcomplete{
+    --border-radius: 20px;
+}

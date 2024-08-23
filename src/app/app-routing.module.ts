@@ -116,12 +116,16 @@ const routes: Routes = [
     loadChildren: () => import('./pages/deposit/deposit.module').then( m => m.DepositPageModule)
   },
   {
-    path: 'depositverify',
-    loadChildren: () => import('./pages/depositverify/depositverify.module').then( m => m.DepositverifyPageModule)
-  },
-  {
     path: 'depositscan',
     loadChildren: () => import('./pages/depositscan/depositscan.module').then( m => m.DepositscanPageModule)
+  },
+  {
+    path: 'depositconfirm',
+    loadChildren: () => import('./pages/depositconfirm/depositconfirm.module').then( m => m.DepositconfirmPageModule)
+  },
+  {
+    path: 'vouchers',
+    loadChildren: () => import('./pages/vouchers/vouchers.module').then( m => m.VouchersPageModule)
   },
 ];
 
