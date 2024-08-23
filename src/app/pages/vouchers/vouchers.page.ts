@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VouchersPage implements OnInit {
 
+  type: string = 'all';
+
   constructor() { }
 
   ngOnInit() {
