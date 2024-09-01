@@ -127,6 +127,10 @@ const routes: Routes = [
     path: 'vouchers',
     loadChildren: () => import('./pages/vouchers/vouchers.module').then( m => m.VouchersPageModule)
   },
+  {
+    path: 'bills',
+    loadChildren: () => import('./pages/bills/bills.module').then( m => m.BillsPageModule)
+  },
 ];
 
 @NgModule({

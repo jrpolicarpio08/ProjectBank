@@ -1,0 +1,32 @@
+.monthly-btn,
+.daily-btn{
+    --indicator-color:#3880ff;
+    --color-checked: #ffff;
+}
+.bill-container{
+    --min-height: 100p;
+}
+.bill-icon-container{
+    height: 70px;
+    min-width: 75px;
+    background-color: #3880ff;
+    border-radius: 10px;
+}
+.bill-info{
+    width: 100%;
+}
+.bill-name{
+    line-height: 20px;
+    margin-bottom: 3px;
+}
+.bill-amnt{
+    line-height: 12px;
+}
+.pay-btn{
+    margin-top: 23px;
+    min-width: 65px;
+    transform: rotate(90deg);
+}
+.pay-btn-lbl{
+    transform: rotate(-90deg);
+}

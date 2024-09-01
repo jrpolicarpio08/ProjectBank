@@ -1,0 +1,132 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="">
+    <ion-buttons slot="start">
+      <ion-button fill="clear" onclick="location.href='/mainmenu'">
+        <ion-icon class="fs-25" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="fs-25 ion-text-center">Bills</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <ion-segment mode="ios" [(ngModel)]="type">
+      <ion-segment-button value="all" class="daily-btn">
+        <ion-label>Pending</ion-label>
+      </ion-segment-button>
+      <ion-segment-button mode="ios" value="mentions" class="monthly-btn">
+        <ion-label>Completed</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <ng-container [ngSwitch]="type">
+    <div class="" *ngSwitchCase="'all'">
+
+      <ion-item lines="none" class="bill-container mt-1 mb-1">
+        <div class="d-flex" style="width: 100%;">
+          <div class="bill-icon-container ion-text-center">
+            <div class="mt-1 text-white">
+              <ion-icon class="fs-40" name="flash-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="ml-1 bill-info">
+            <div class="fw-900 fs-25 bill-name">Meralco</div>
+            <div class="fs-12 bill-acc-num">Account Number: 5712003794 </div>
+            <div class="fs-12 bill-amnt">Amount: ₱ 9,800.00 </div>
+            <div class="fs-12 bill-due text-medium">Due: 08-31-2024</div>
+          </div>
+          <div>
+            <ion-button class="pay-btn">
+              <div class="pay-btn-lbl" style="margin-right: 5px;">P</div>
+              <div class="pay-btn-lbl" style="margin-right: 7px;">A</div>
+              <div class="pay-btn-lbl">Y</div>
+            </ion-button>
+          </div>
+        </div>
+      </ion-item>
+      <div class="separator"></div>
+
+      <ion-item lines="none" class="bill-container mt-1 mb-1">
+        <div class="d-flex" style="width: 100%;">
+          <div class="bill-icon-container ion-text-center">
+            <div class="mt-1 text-white">
+              <ion-icon class="fs-40" name="water-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="ml-1 bill-info">
+            <div class="fw-900 fs-25 bill-name">Maynilad</div>
+            <div class="fs-12 bill-acc-num">Account Number: 26809455  </div>
+            <div class="fs-12 bill-amnt">Amount: ₱ 850.00 </div>
+            <div class="fs-12 bill-due text-medium">Due: 08-31-2024</div>
+          </div>
+          <div>
+            <ion-button class="pay-btn">
+              <div class="pay-btn-lbl" style="margin-right: 5px;">P</div>
+              <div class="pay-btn-lbl" style="margin-right: 7px;">A</div>
+              <div class="pay-btn-lbl">Y</div>
+            </ion-button>
+          </div>
+        </div>
+      </ion-item>
+      <div class="separator"></div>
+
+      <ion-item lines="none" class="bill-container mt-1 mb-1">
+        <div class="d-flex" style="width: 100%;">
+          <div class="bill-icon-container ion-text-center">
+            <div class="mt-1 text-white">
+              <ion-icon class="fs-40" name="wifi-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="ml-1 bill-info">
+            <div class="fw-900 fs-25 bill-name">Converge</div>
+            <div class="fs-12 bill-acc-num">Account Number: 7099497617062   </div>
+            <div class="fs-12 bill-amnt">Amount: ₱ 2,656.00 </div>
+            <div class="fs-12 bill-due text-medium">Due: 08-31-2024</div>
+          </div>
+          <div>
+            <ion-button class="pay-btn">
+              <div class="pay-btn-lbl" style="margin-right: 5px;">P</div>
+              <div class="pay-btn-lbl" style="margin-right: 7px;">A</div>
+              <div class="pay-btn-lbl">Y</div>
+            </ion-button>
+          </div>
+        </div>
+      </ion-item>
+      <div class="separator"></div>
+
+      <ion-item lines="none" class="bill-container mt-1 mb-1">
+        <div class="d-flex" style="width: 100%;">
+          <div class="bill-icon-container ion-text-center">
+            <div class="mt-1 text-white">
+              <ion-icon class="fs-40" name="water-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="ml-1 bill-info">
+            <div class="fw-900 fs-25 bill-name">Rent</div>
+            <div class="fs-12 bill-acc-num">Account Number: 7099497617062   </div>
+            <div class="fs-12 bill-amnt">Amount: ₱ 2,656.00 </div>
+            <div class="fs-12 bill-due text-medium">Due: 08-31-2024</div>
+          </div>
+          <div>
+            <ion-button class="pay-btn">
+              <div class="pay-btn-lbl" style="margin-right: 5px;">P</div>
+              <div class="pay-btn-lbl" style="margin-right: 7px;">A</div>
+              <div class="pay-btn-lbl">Y</div>
+            </ion-button>
+          </div>
+        </div>
+      </ion-item>
+      <div class="separator"></div>
+
+    </div>
+
+    <div class="" *ngSwitchCase="'mentions'">
+      
+    </div>
+  </ng-container>
+</ion-content>

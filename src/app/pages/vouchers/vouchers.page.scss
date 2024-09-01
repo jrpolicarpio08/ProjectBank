@@ -1,0 +1,37 @@
+.avail,
+.claim,
+.exp{
+    --indicator-color:#3880ff;
+    --color-checked: #ffff;
+}
+.vouch-content{
+    border-radius: 15px;
+    min-width: 100%;
+    --min-height: 80px;
+    --background: #3880ff;
+    border: 2px solid #fff;
+}
+.vouch-icon{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.vouch-info{
+    margin-top: 16px;
+}
+.vouch-separator{
+    border: 1px solid #fff;
+    background-color: #fff;
+    position: relative;
+    left: 20px;
+    top: 0px;
+    height: 80px;
+}
+.vouch-design{
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    height: 2px;
+    background-color: white;
+    width: 100vh;
+    position: relative;
+}

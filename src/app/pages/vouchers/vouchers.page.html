@@ -15,20 +15,36 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
   <ion-segment mode="ios" [(ngModel)]="type">
-    <ion-segment-button value="all">
+    <ion-segment-button value="all" class="avail">
       <ion-label>Available</ion-label>
     </ion-segment-button>
-    <ion-segment-button mode="ios" value="mentions">
+    <ion-segment-button mode="ios" value="mentions" class="claim">
       <ion-label>Claimed</ion-label>
     </ion-segment-button>
-    <ion-segment-button mode="ios" value="expired">
+    <ion-segment-button mode="ios" value="expired" class="exp">
       <ion-label>Expired</ion-label>
     </ion-segment-button>
   </ion-segment>
 
   <ng-container [ngSwitch]="type">
     <div class="" *ngSwitchCase="'all'">
-      <div class="">test - Available</div>
+      <div class="mt-1">
+
+        <ion-item lines="none" class="vouch-content">
+          <div class="d-flex vouch-details">
+            <div class="fs-50 text-white vouch-icon">
+              <ion-icon name="storefront-outline"></ion-icon>
+            </div>
+            <div class="vouch-separator"></div>
+            <div class="ml-2 vouch-info">
+              <div class="text-white fw-500">50% Cashback Voucher</div>
+              <div class="vouch-design"></div>
+              <div class="fs-12 text-white">Valid Until: 08-28-2024</div>
+            </div>
+          </div>
+        </ion-item>
+
+      </div>
     </div>
 
     <div class="" *ngSwitchCase="'mentions'">
