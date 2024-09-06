@@ -105,7 +105,7 @@ const routes: Routes = [
   },
   {
     path: 'verifytransfer',
-    loadChildren: () => import('./pages/verifytransfer/verifytransfer.module').then( m => m.VerifytransferPageModule)
+    loadChildren: () => import('./pages/modals/verifytransfer/verifytransfer.module').then( m => m.VerifytransferPageModule)
   },
   {
     path: 'transferconfirm',
@@ -130,6 +130,14 @@ const routes: Routes = [
   {
     path: 'bills',
     loadChildren: () => import('./pages/bills/bills.module').then( m => m.BillsPageModule)
+  },
+  {
+    path: 'billsadd',
+    loadChildren: () => import('./pages/billsadd/billsadd.module').then( m => m.BillsaddPageModule)
+  },
+  {
+    path: 'billspaymeralco',
+    loadChildren: () => import('./pages/modals/billspaymeralco/billspaymeralco.module').then( m => m.BillspaymeralcoPageModule)
   },
 ];
 

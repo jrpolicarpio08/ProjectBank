@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { VerifytransferPage } from '../verifytransfer/verifytransfer.page';
+import { VerifytransferPage } from '../modals/verifytransfer/verifytransfer.page';
 
 @Component({
   selector: 'app-transferconfirm',

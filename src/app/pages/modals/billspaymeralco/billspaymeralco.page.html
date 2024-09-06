@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear" [disabled]="true">
+        <div></div>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons class="text-danger" slot="end" (click)="close()">
+      <ion-button fill="clear">Cancel</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="ion-text-center">
+    <div class="bill-logo-container">
+      <ion-icon class="fs-50 text-white" name="flash-outline"></ion-icon>
+    </div>
+    <div class=" mt-1 fs-25 fw-500">Meralco</div>
+  </div>
+
+  <div>
+    <ion-item lines="none" class="mt-1 bill-content">
+      <div class="d-flex">
+        <div class="bill-due ml-1 ion-text-center">
+          <div class="fs-20 text-uppercase text-white">sept</div>
+          <div class="fs-25 text-white fw-500">30</div>
+        </div>
+        <div class="bill-separator"></div>
+        <div class="due-days">
+          <div class="text-white fw-500">Due in 24 days</div>
+        </div>
+      </div>
+    </ion-item>
+  </div>
+
+  <div class="mt-1 fw-500">Choose Account</div>
+  <div>
+    <ion-item lines="none" class="acc-select-dd mb-1">
+      <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="PayPal: 4118 9838 0867 5175">
+        <ion-select-option>PayPal: 4118 9838 0867 5175</ion-select-option>
+        <ion-select-option>PayMaya: 4568 4262 6046 8338</ion-select-option>
+        <ion-select-option>G-cash: 4488 7520 2883 4728</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <div class="separator"></div>
+  <div class="mt-1 fs-18 fw-500">Transaction Details</div>
+  <div>Date <span style="float: right;">09/6/2024</span></div>
+  <div>Account Number <span style="float: right;">5712003794</span></div>
+  <div>Transaction ID <span class="" style="float: right;">P4YB1LL5</span></div>
+  <div>Amount <span class="" style="float: right;">₱ 9,800.00</span></div>
+  <div class="mb-1">Transaction Charge <span class="" style="float: right;">₱ 10.00</span></div>
+  <div class="separator"></div>
+  <div class="mt-1 fs-18 fw-500">Total Amount<span style="float:right">₱ 9,810.00</span></div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border ion-padding">
+  <ion-toolbar>
+      <ion-button expand="block" class="btn-primary">Pay</ion-button>
+  </ion-toolbar>
+</ion-footer>
