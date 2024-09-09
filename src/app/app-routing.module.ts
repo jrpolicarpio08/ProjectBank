@@ -137,7 +137,27 @@ const routes: Routes = [
   },
   {
     path: 'billspaymeralco',
-    loadChildren: () => import('./pages/modals/billspaymeralco/billspaymeralco.module').then( m => m.BillspaymeralcoPageModule)
+    loadChildren: () => import('./pages/modals/billsmeralco/billspaymeralco/billspaymeralco.module').then( m => m.BillspaymeralcoPageModule)
+  },
+  {
+    path: 'meralcoverify',
+    loadChildren: () => import('./pages/modals/billsmeralco/meralcoverify/meralcoverify.module').then( m => m.MeralcoverifyPageModule)
+  },
+  {
+    path: 'billspaymaynilad',
+    loadChildren: () => import('./pages/modals/billsmaynilad/billspaymaynilad/billspaymaynilad.module').then( m => m.BillspaymayniladPageModule)
+  },
+  {
+    path: 'mayniladverify',
+    loadChildren: () => import('./pages/modals/billsmaynilad/mayniladverify/mayniladverify.module').then( m => m.MayniladverifyPageModule)
+  },
+  {
+    path: 'billspayconverge',
+    loadChildren: () => import('./pages/modals/billsconverge/billspayconverge/billspayconverge.module').then( m => m.BillspayconvergePageModule)
+  },
+  {
+    path: 'convergeverify',
+    loadChildren: () => import('./pages/modals/billsconverge/convergeverify/convergeverify.module').then( m => m.ConvergeverifyPageModule)
   },
 ];
 

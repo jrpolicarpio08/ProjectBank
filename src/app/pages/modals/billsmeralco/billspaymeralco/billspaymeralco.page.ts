@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { MeralcoverifyPage } from '../meralcoverify/meralcoverify.page';
 
 @Component({
   selector: 'app-billspaymeralco',
@@ -15,6 +16,14 @@ export class BillspaymeralcoPage implements OnInit {
 
   close(){
     this.modalCtrl.dismiss();
+  }
+
+  meralcoverify(){
+    this.modalCtrl.create({
+      component: MeralcoverifyPage
+    }).then(modalres => {
+      modalres.present();
+    })
   }
 
 
