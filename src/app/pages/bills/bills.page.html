@@ -6,9 +6,9 @@
       </ion-button>
     </ion-buttons>
     <ion-title class="fs-25 ion-text-center">Bills</ion-title>
-    <ion-buttons slot="end">
+    <ion-buttons slot="end" id="popover-button">
       <ion-button fill="clear">
-        <ion-icon class="fs-25" name="add-outline"></ion-icon>
+        <ion-icon class="fs-25" name="ellipsis-horizontal"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -80,7 +80,7 @@
 
       <div class="separator"></div>
 
-      <ion-item lines="none" class="bill-container mt-1 mb-1">
+      <ion-item [button]="true" lines="none" class="bill-container mt-1 mb-1">
         <div class="d-flex" style="width: 100%;">
           <div class="bill-icon-container ion-text-center">
             <div class="mt-1 text-white">
@@ -104,7 +104,7 @@
       </ion-item>
 
       <div class="separator"></div>
-      
+
     </div>
 
     <div class="" *ngSwitchCase="'mentions'">
@@ -113,4 +113,16 @@
 
   </ng-container>
 </ion-content>
+
+<ion-popover class="pop-over" trigger="popover-button" [dismissOnSelect]="false" size="auto">
+  <ng-template>
+    <ion-content class="ion-text-center">
+      <ion-list>
+        <ion-button class="text-dark" fill="clear">Add Bill</ion-button>
+        <ion-button class="text-dark" fill="clear">Edit Bill</ion-button>
+        <ion-button class="text-dark" fill="clear">Delete Bill</ion-button>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
 

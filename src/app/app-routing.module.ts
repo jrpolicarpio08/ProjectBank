@@ -132,10 +132,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/bills/bills.module').then( m => m.BillsPageModule)
   },
   {
-    path: 'billsadd',
-    loadChildren: () => import('./pages/billsadd/billsadd.module').then( m => m.BillsaddPageModule)
-  },
-  {
     path: 'billspaymeralco',
     loadChildren: () => import('./pages/modals/billsmeralco/billspaymeralco/billspaymeralco.module').then( m => m.BillspaymeralcoPageModule)
   },
