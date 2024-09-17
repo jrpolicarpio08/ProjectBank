@@ -6,9 +6,9 @@
       </ion-button>
     </ion-buttons>
     <ion-title class="fs-25 ion-text-center">Bills</ion-title>
-    <ion-buttons slot="end" id="popover-button">
+    <ion-buttons slot="end">
       <ion-button fill="clear">
-        <ion-icon class="fs-25" name="ellipsis-horizontal"></ion-icon>
+        <ion-icon class="fs-25" name="add-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -108,21 +108,52 @@
     </div>
 
     <div class="" *ngSwitchCase="'mentions'">
+
+      <ion-item lines="none" class="bill-container mt-1 mb-1">
+        <div class="d-flex" style="width: 100%;">
+          <div class="bill-icon-container ion-text-center">
+            <div class="mt-1 text-white">
+              <ion-icon class="fs-40" name="medical-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="ml-1 bill-info">
+            <div class="fw-900 fs-25 bill-name">PhilHealth</div>
+            <div class="fs-12 bill-acc-num">Account Number: 955505159350 </div>
+            <div class="fs-12 bill-amnt">Amount: ₱ 5,800.00 ( PAID ) </div>
+            <div class="fs-12 bill-due text-medium">Due: 08-31-2024</div>
+          </div>
+          <div>
+            <ion-icon class="fs-50 text-success" style="margin-top: 5px;" name="checkmark-outline"></ion-icon>
+          </div>
+        </div>
+      </ion-item>
+
+      <div class="separator"></div>
+
+      <ion-item lines="none" class="bill-container mt-1 mb-1">
+        <div class="d-flex" style="width: 100%;">
+          <div class="bill-icon-container ion-text-center">
+            <div class="mt-1 text-white">
+              <ion-icon class="fs-40" name="briefcase-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="ml-1 bill-info">
+            <div class="fw-900 fs-25 bill-name">SSS</div>
+            <div class="fs-12 bill-acc-num">Account Number: 9819720724  </div>
+            <div class="fs-12 bill-amnt">Amount: ₱ 340.00 ( PAID )</div>
+            <div class="fs-12 bill-due text-medium">Due: 08-31-2024</div>
+          </div>
+          <div>
+            <ion-icon class="fs-50 text-success" style="margin-top: 5px;" name="checkmark-outline"></ion-icon>
+          </div>
+        </div>
+      </ion-item>
+
+      <div class="separator"></div>
       
     </div>
 
   </ng-container>
 </ion-content>
 
-<ion-popover class="pop-over" trigger="popover-button" [dismissOnSelect]="false" size="auto">
-  <ng-template>
-    <ion-content class="ion-text-center">
-      <ion-list>
-        <ion-button class="text-dark" fill="clear">Add Bill</ion-button>
-        <ion-button class="text-dark" fill="clear">Edit Bill</ion-button>
-        <ion-button class="text-dark" fill="clear">Delete Bill</ion-button>
-      </ion-list>
-    </ion-content>
-  </ng-template>
-</ion-popover>
 

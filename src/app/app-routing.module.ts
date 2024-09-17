@@ -155,6 +155,18 @@ const routes: Routes = [
     path: 'convergeverify',
     loadChildren: () => import('./pages/modals/billsconverge/convergeverify/convergeverify.module').then( m => m.ConvergeverifyPageModule)
   },
+  {
+    path: 'meralcodelete',
+    loadChildren: () => import('./pages/modals/billsmeralco/meralcodelete/meralcodelete.module').then( m => m.MeralcodeletePageModule)
+  },
+  {
+    path: 'mayniladdelete',
+    loadChildren: () => import('./pages/modals/billsmaynilad/mayniladdelete/mayniladdelete.module').then( m => m.MayniladdeletePageModule)
+  },
+  {
+    path: 'convergedelete',
+    loadChildren: () => import('./pages/modals/billsconverge/convergedelete/convergedelete.module').then( m => m.ConvergedeletePageModule)
+  },
 ];
 
 @NgModule({

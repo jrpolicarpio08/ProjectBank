@@ -26,5 +26,16 @@ export class BillspaymeralcoPage implements OnInit {
     })
   }
 
+  public alertButtons = [
+    {
+      text: 'Cancel',
+    },
+    {
+      text: 'Confirm',
+      handler: () => {
+        window.location.href='/meralcodelete';
+      },
+    },
+  ];
 
 }
