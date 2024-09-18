@@ -61,5 +61,7 @@
 <ion-footer class="ion-no-border ion-padding">
   <ion-toolbar>
       <ion-button expand="block" class="btn-primary" (click)="mayniladverify()">Pay</ion-button>
+      <ion-button expand="block" class="btn" id="present-alert" color="danger">Delete Bill</ion-button>
+      <ion-alert mode="ios" trigger="present-alert" class="custom-alert" header="Are you sure?" message="You want to delete this bill?" [buttons]="alertButtons"></ion-alert>
   </ion-toolbar>
 </ion-footer>

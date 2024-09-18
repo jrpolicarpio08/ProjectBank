@@ -1,13 +1,11 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>mayniladdelete</ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border">
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">mayniladdelete</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+  <div class="mt-5 text-success" style="font-size: 200px;">
+    <ion-icon name="checkmark-circle-outline"></ion-icon>
+    <div class="fs-25 text-dark">Bill Deleted!</div>
+    <div class="fs-22 text-medium"><p>You have successfully deleted your "Maynilad" bill</p></div>
+  </div>
+  <ion-button class=" mt-1 btn-primary" onclick="location.href='/bills'">Back to bills</ion-button>
 </ion-content>

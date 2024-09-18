@@ -26,4 +26,16 @@ export class BillspayconvergePage implements OnInit {
     })
   }
 
+  public alertButtons = [
+    {
+      text: 'Cancel',
+    },
+    {
+      text: 'Confirm',
+      handler: () => {
+        window.location.href='/convergedelete';
+      },
+    },
+  ];
+
 }
