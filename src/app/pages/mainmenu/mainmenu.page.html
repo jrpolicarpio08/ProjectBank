@@ -93,7 +93,7 @@
             </ion-item>
         </div>
         <div>
-            <ion-item button detail="false" lines="none" class="pg-btn cards">
+            <ion-item button detail="false" lines="none" class="pg-btn cards" onclick="location.href='/cards'">
                 <div class="ion-text-center">
                     <ion-icon class="pg-icon" name="wallet-outline"></ion-icon>
                     <div class="pg-lbl">Cards</div>
@@ -103,15 +103,15 @@
     </div>
     
     <div class="mt-1">
-        <ion-item class="sub-btn" button detail="false" lines="none">
-            <div slot="start" class="">Subscriptions</div>
-            <ion-icon class="text-white" slot="end" name="pricetags-outline"></ion-icon>
+        <ion-item class="sub-btn" detail="false" button lines="none" onclick="location.href='/loans'">
+            <div slot="start" class="">Loans</div>
+            <ion-icon class="text-white" slot="end" name="newspaper-outline"></ion-icon>
         </ion-item>
     </div>
     <div class="mb-1">
-        <ion-item class="sub-btn" detail="false" button lines="none">
-            <div slot="start" class="">Loans</div>
-            <ion-icon class="text-white" slot="end" name="newspaper-outline"></ion-icon>
+        <ion-item class="sub-btn" button detail="false" lines="none" onclick="location.href='/subscriptions'">
+            <div slot="start" class="">Subscriptions</div>
+            <ion-icon class="text-white" slot="end" name="pricetags-outline"></ion-icon>
         </ion-item>
     </div>
 </ion-content>

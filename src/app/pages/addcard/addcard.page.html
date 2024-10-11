@@ -1,0 +1,173 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear" class="" onclick="location.href='/mainmenu'">
+        <ion-icon  class="fs-25 text-dark" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="fs-25 ion-text-center">Add Card</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" [disabled]="true" onclick="location.href='/addcard'">
+        <ion-icon class="fs-25 text-white" name="add-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="ion-text-center">
+    <ion-icon style="font-size: 120px;" class="text-primary" name="card-outline"></ion-icon>
+  </div>
+  <div class="iselect mt-1">
+    <div class="fs-20">Card Type</div>
+    <div>
+      <ion-item lines="none" class="iselect-dd">
+        <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="" placeholder="Choose card type">
+          <ion-select-option>Business Credit Cards</ion-select-option>
+          <ion-select-option>Cash Back Credit Cards</ion-select-option>
+          <ion-select-option>Store Credit Cards</ion-select-option>
+          <ion-select-option>Retail Cards</ion-select-option>
+          <ion-select-option>Premium Cards</ion-select-option>
+          <ion-select-option>Travel Credit Cards</ion-select-option>
+          <ion-select-option>Reward Credit Cards</ion-select-option>
+          <ion-select-option>Balance Transfer Cards</ion-select-option>
+          <ion-select-option>Charge Cards</ion-select-option>
+          <ion-select-option>Rewards Cards</ion-select-option>
+          <ion-select-option>Premium Credit Cards</ion-select-option>
+          <ion-select-option>Student Credit Cards</ion-select-option>
+          <ion-select-option>Secured Credit Cards</ion-select-option>
+          <ion-select-option>Co-Branded Credit Cards</ion-select-option>
+          <ion-select-option>Regular Credit Cards</ion-select-option>
+          <ion-select-option>Credit Cards</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+  </div>
+  <div class="iselect mt-1">
+    <div class="fs-20">Card Brand</div>
+    <div>
+      <ion-item lines="none" class="iselect-dd">
+        <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="" placeholder="Choose card brand">
+          <ion-select-option>UnionBank</ion-select-option>
+          <ion-select-option>MetroBank</ion-select-option>
+          <ion-select-option>BPI</ion-select-option>
+          <ion-select-option>AUB</ion-select-option>
+          <ion-select-option>HSBC</ion-select-option>
+          <ion-select-option>Security Bank</ion-select-option>
+          <ion-select-option>RCBC</ion-select-option>
+          <ion-select-option>EastWest</ion-select-option>
+          <ion-select-option>China Bank</ion-select-option>
+          <ion-select-option>Wise</ion-select-option>
+          <ion-select-option>BDO</ion-select-option>
+          <ion-select-option>PSBANK</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+  </div>
+  <div class="iselect mt-1">
+    <div class="fs-20">Card Holder</div>
+      <div>
+        <ion-item lines="none" class="iselect-input">
+          <ion-input placeholder="Juan Dela Cruz"></ion-input>
+        </ion-item>
+      </div>
+  </div>
+  <div class="iselect mt-1">
+    <div class="fs-20">Card Number</div>
+      <div>
+        <ion-item lines="none" class="iselect-input">
+          <ion-input placeholder="0000 0000 0000"></ion-input>
+        </ion-item>
+      </div>
+  </div>
+  <div class="iselec mt-1">
+    <div class="fs-20">Expired Date</div>
+    <div class="h-center">
+      <div class="mr-1">
+        <div>
+          <ion-item lines="none" class="iselect-dd-day">
+            <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="" placeholder="Day">
+              <ion-select-option>01</ion-select-option>
+              <ion-select-option>02</ion-select-option>
+              <ion-select-option>03</ion-select-option>
+              <ion-select-option>04</ion-select-option>
+              <ion-select-option>05</ion-select-option>
+              <ion-select-option>06</ion-select-option>
+              <ion-select-option>07</ion-select-option>
+              <ion-select-option>08</ion-select-option>
+              <ion-select-option>09</ion-select-option>
+              <ion-select-option>10</ion-select-option>
+              <ion-select-option>11</ion-select-option>
+              <ion-select-option>12</ion-select-option>
+              <ion-select-option>13</ion-select-option>
+              <ion-select-option>14</ion-select-option>
+              <ion-select-option>15</ion-select-option>
+              <ion-select-option>16</ion-select-option>
+              <ion-select-option>17</ion-select-option>
+              <ion-select-option>18</ion-select-option>
+              <ion-select-option>19</ion-select-option>
+              <ion-select-option>20</ion-select-option>
+              <ion-select-option>21</ion-select-option>
+              <ion-select-option>22</ion-select-option>
+              <ion-select-option>23</ion-select-option>
+              <ion-select-option>24</ion-select-option>
+              <ion-select-option>25</ion-select-option>
+              <ion-select-option>26</ion-select-option>
+              <ion-select-option>27</ion-select-option>
+              <ion-select-option>28</ion-select-option>
+              <ion-select-option>29</ion-select-option>
+              <ion-select-option>30</ion-select-option>
+              <ion-select-option>31</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+      </div>
+      <div class="mr-1">
+        <div>
+          <ion-item lines="none" class="iselect-dd-month">
+            <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="" placeholder="Month">
+              <ion-select-option>January</ion-select-option>
+              <ion-select-option>February</ion-select-option>
+              <ion-select-option>March</ion-select-option>
+              <ion-select-option>April</ion-select-option>
+              <ion-select-option>May</ion-select-option>
+              <ion-select-option>June</ion-select-option>
+              <ion-select-option>July</ion-select-option>
+              <ion-select-option>August</ion-select-option>
+              <ion-select-option>September</ion-select-option>
+              <ion-select-option>October</ion-select-option>
+              <ion-select-option>November</ion-select-option>
+              <ion-select-option>December</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+      </div>
+      <div class="">
+        <div>
+          <ion-item lines="none" class="iselect-dd-month">
+            <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="" placeholder="Year">
+              <ion-select-option>2030</ion-select-option>
+              <ion-select-option>2031</ion-select-option>
+              <ion-select-option>2032</ion-select-option>
+              <ion-select-option>2033</ion-select-option>
+              <ion-select-option>2034</ion-select-option>
+              <ion-select-option>2035</ion-select-option>
+              <ion-select-option>2036</ion-select-option>
+              <ion-select-option>2037</ion-select-option>
+              <ion-select-option>2038</ion-select-option>
+              <ion-select-option>2039</ion-select-option>
+              <ion-select-option>2040</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border ion-padding">
+  <ion-toolbar>
+    <ion-button id="confirm-pass" class="btn-primary" expand="block">Link Card</ion-button>
+    <ion-alert mode="ios" trigger="confirm-pass" class="custom-alert" header="Add Card" subHeader="To continue please type your password below" [buttons]="alertButtons" [inputs]="alertInputs"></ion-alert>
+  </ion-toolbar>
+</ion-footer>

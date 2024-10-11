@@ -1,0 +1,30 @@
+.ongoing-btn,
+.completed-btn{
+    --indicator-color:#3880ff;
+    --color-checked: #ffff;
+}
+.loan-details{
+    background: white;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
+}
+.separator{
+    margin-top: -15px;
+    margin-bottom: -5px;
+}
+.loan-desc{
+    margin-top: -5px;
+}
+.loan-prog-bar{
+    margin-top: 5px;
+    margin-bottom: 6px;
+    height: 8px;
+    border-radius: 20px;
+}
+ion-modal {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}

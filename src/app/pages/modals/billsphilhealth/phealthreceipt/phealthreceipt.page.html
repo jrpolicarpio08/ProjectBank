@@ -1,0 +1,60 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear" [disabled]="true">
+        <div></div>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons class="text-danger" slot="end" (click)="close()">
+      <ion-button fill="clear">Return</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="ion-text-center">
+    <div class="bill-logo-container">
+      <ion-icon class="fs-50 text-white" name="medical-outline"></ion-icon>
+    </div>
+    <div class=" mt-1 fs-25 fw-500">Philhealth</div>
+  </div>
+
+  <div>
+    <ion-item lines="none" class="mt-1 bill-content">
+      <div class="d-flex">
+        <div class="bill-due ml-1 ion-text-center">
+          <div class="fs-20 text-uppercase text-white">sept</div>
+          <div class="fs-25 text-white fw-500">30</div>
+        </div>
+        <div class="bill-separator"></div>
+        <div class="due-days">
+          <div class="text-white fw-500">PAID</div>
+        </div>
+      </div>
+    </ion-item>
+  </div>
+
+  <div class="mt-1 fw-500">Account Used</div>
+  <div>
+    <ion-item lines="none" class="acc-select-dd mb-1">
+      <div class="" style="margin-top: 10px;">PayMaya: 4568 4262 6046 8338</div>
+    </ion-item>
+  </div>
+
+  <div class="separator"></div>
+  <div class="mt-1 fs-18 fw-500">Transaction Details</div>
+  <div>Date <span style="float: right;">09/09/2024</span></div>
+  <div>Account Number <span style="float: right;">955505159350</span></div>
+  <div>Transaction ID <span class="" style="float: right;">H34LTH</span></div>
+  <div>Amount <span class="" style="float: right;">₱ 5,800.00</span></div>
+  <div class="mb-1">Transaction Charge <span class="" style="float: right;">₱ 10.00</span></div>
+  <div class="separator"></div>
+  <div class="mt-1 fs-18 fw-500">Total Amount<span style="float:right">₱ 5,810.00</span></div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border ion-padding">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-footer>

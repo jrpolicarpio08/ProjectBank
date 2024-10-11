@@ -24,10 +24,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
   },
   {
-    path: 'sliders',
-    loadChildren: () => import('./pages/sliders/sliders.module').then( m => m.SlidersPageModule)
-  },
-  {
     path: 'verifyemail',
     loadChildren: () => import('./pages/verifyemail/verifyemail.module').then( m => m.VerifyemailPageModule)
   },
@@ -166,6 +162,46 @@ const routes: Routes = [
   {
     path: 'convergedelete',
     loadChildren: () => import('./pages/modals/billsconverge/convergedelete/convergedelete.module').then( m => m.ConvergedeletePageModule)
+  },
+  {
+    path: 'billsadd',
+    loadChildren: () => import('./pages/billsadd/billsadd.module').then( m => m.BillsaddPageModule)
+  },
+  {
+    path: 'sssreceipt',
+    loadChildren: () => import('./pages/modals/billsSSS/sssreceipt/sssreceipt.module').then( m => m.SssreceiptPageModule)
+  },
+  {
+    path: 'phealthreceipt',
+    loadChildren: () => import('./pages/modals/billsphilhealth/phealthreceipt/phealthreceipt.module').then( m => m.PhealthreceiptPageModule)
+  },
+  {
+    path: 'billsaddcomplete',
+    loadChildren: () => import('./pages/billsaddcomplete/billsaddcomplete.module').then( m => m.BillsaddcompletePageModule)
+  },
+  {
+    path: 'cards',
+    loadChildren: () => import('./pages/cards/cards.module').then( m => m.CardsPageModule)
+  },
+  {
+    path: 'addcard',
+    loadChildren: () => import('./pages/addcard/addcard.module').then( m => m.AddcardPageModule)
+  },
+  {
+    path: 'addcardsuccess',
+    loadChildren: () => import('./pages/addcardsuccess/addcardsuccess.module').then( m => m.AddcardsuccessPageModule)
+  },
+  {
+    path: 'loans',
+    loadChildren: () => import('./pages/loans/loans.module').then( m => m.LoansPageModule)
+  },
+  {
+    path: 'subscriptions',
+    loadChildren: () => import('./pages/subscriptions/subscriptions.module').then( m => m.SubscriptionsPageModule)
+  },
+  {
+    path: 'loancar',
+    loadChildren: () => import('./pages/modals/loancar/loancar.module').then( m => m.LoancarPageModule)
   },
 ];
 

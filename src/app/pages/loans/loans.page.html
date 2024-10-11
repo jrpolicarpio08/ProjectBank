@@ -1,0 +1,90 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear" class="" onclick="location.href='/mainmenu'">
+        <ion-icon  class="fs-25 text-dark" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="fs-25 ion-text-center">Loans</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" onclick="location.href='/addcard'">
+        <ion-icon class="fs-25" name="add-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-segment mode="ios" [(ngModel)]="type">
+    <ion-segment-button value="all" class="ongoing-btn">
+      <ion-label>Ongoing</ion-label>
+    </ion-segment-button>
+    <ion-segment-button mode="ios" value="mentions" class="completed-btn">
+      <ion-label>Completed</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ng-container [ngSwitch]="type">
+    <!-- transaction section -->
+    <div *ngSwitchCase="'all'">
+
+      <div class="mt-1">
+        <div class="loan-details" id="open-modal" (click)="loancar()">
+          <div class="ion-padding">
+            <div class="fs-20 fw-900 text-primary">Subaru XV 2020 <span style="float: right;" class="fw-200 text-medium"> <ion-icon name="time-outline"></ion-icon> 46 Months Left </span></div>
+            <div class="loan-desc text-medium fs-14">
+              <p>My dream car finally</p>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="ion-padding">
+            <div class="fw-900 fs-20 text-primary"> 30% <span style="float:right"> ₱  480,000 </span></div>
+            <ion-progress-bar class="loan-prog-bar" value=".30"></ion-progress-bar>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-2">
+        <div class="loan-details" id="open-modal1">
+          <div class="ion-padding">
+            <div class="fs-20 fw-900 text-primary">Dream House <span style="float: right;" class="fw-200 text-medium"> <ion-icon name="time-outline"></ion-icon> 92 Months Left </span></div>
+            <div class="loan-desc text-medium fs-14">
+              <p>My very own house </p>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="ion-padding">
+            <div class="fw-900 fs-20 text-primary"> 10% <span style="float:right"> ₱  100,000 </span></div>
+            <ion-progress-bar class="loan-prog-bar" value=".10"></ion-progress-bar>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-2">
+        <div class="loan-details">
+          <div class="ion-padding">
+            <div class="fs-20 fw-900 text-primary">INTDM Garage<span style="float: right;" class="fw-200 text-medium"> <ion-icon name="time-outline"></ion-icon> 26 Months Left </span></div>
+            <div class="loan-desc text-medium fs-14">
+              <p>Performance specialized vehicle shop </p>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="ion-padding">
+            <div class="fw-900 fs-20 text-primary"> 50% <span style="float:right"> ₱  5,000,000 </span></div>
+            <ion-progress-bar class="loan-prog-bar" value=".50"></ion-progress-bar>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- transaction section -->
+
+    <!-- accounts section -->
+    <div class="" *ngSwitchCase="'mentions'">
+      
+    </div>
+    <!-- account section -->
+  </ng-container>
+
+</ion-content>

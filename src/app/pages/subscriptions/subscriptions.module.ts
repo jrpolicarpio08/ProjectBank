@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SlidersPageRoutingModule } from './sliders-routing.module';
+import { SubscriptionsPageRoutingModule } from './subscriptions-routing.module';
 
-import { SlidersPage } from './sliders.page';
+import { SubscriptionsPage } from './subscriptions.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SlidersPageRoutingModule
+    SubscriptionsPageRoutingModule
   ],
-  declarations: [SlidersPage]
+  declarations: [SubscriptionsPage]
 })
-export class SlidersPageModule {}
+export class SubscriptionsPageModule {}

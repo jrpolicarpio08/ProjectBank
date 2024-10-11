@@ -3,9 +3,6 @@
     --indicator-color:#3880ff;
     --color-checked: #ffff;
 }
-.bill-container{
-    --min-height: 100p;
-}
 .bill-icon-container{
     height: 70px;
     min-width: 75px;
@@ -22,11 +19,13 @@
 .bill-amnt{
     line-height: 12px;
 }
+.view-btn,
 .pay-btn{
     margin-top: 23px;
     min-width: 65px;
     transform: rotate(90deg);
 }
+.view-btn-lbl,
 .pay-btn-lbl{
     transform: rotate(-90deg);
 }
