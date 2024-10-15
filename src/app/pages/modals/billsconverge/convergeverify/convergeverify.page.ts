@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { ConvergepaidPage } from '../convergepaid/convergepaid.page';
 
 @Component({
   selector: 'app-convergeverify',
@@ -17,5 +18,11 @@ export class ConvergeverifyPage implements OnInit {
     this.modalCtrl.dismiss();
   }
 
-
+  billpaidconverge(){
+    this.modalCtrl.create({
+      component: ConvergepaidPage
+    }).then(modalres => {
+      modalres.present();
+    })
+  }
 }

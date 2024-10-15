@@ -1,5 +1,5 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar color="translucent">
 
     <ion-buttons slot="start">
       <ion-button fill="clear" [disabled]="true">
@@ -17,14 +17,14 @@
 
   <div class="ion-text-center">
     <div class="loan-logo-container">
-      <ion-icon class="fs-50 text-white" name="car-outline"></ion-icon>
+      <ion-icon class="fs-50 text-white" name="storefront-outline"></ion-icon>
     </div>
-    <div class=" mt-1 fs-25 fw-500">Subaru XV 2020</div>
+    <div class=" mt-1 fs-25 fw-500">INTDM Garage</div>
   </div>
 
   <div>
-    <ion-item lines="none" class="mt-1 mb-1 bill-content ion-text-center">
-      <div class=" fs-20 text-white fw-500" style="margin: 0 auto;"><ion-icon name="time-outline"></ion-icon> 46 Months Left</div>
+    <ion-item lines="none" class="mt-1 mb-1 loan-due-content ion-text-center">
+      <div class=" fs-20 text-white fw-500" style="margin: 0 auto;"><ion-icon name="time-outline"></ion-icon> 10 / 24 Months Left</div>
     </ion-item>
   </div>
 
@@ -35,7 +35,7 @@
       <ion-icon class="fs-40 text-primary" name="key-outline"></ion-icon>
       <div style="margin-left: 10px;" class="fs-16">
         <div class="fw-500">Loan ID</div>
-        <div>Paypal:&nbsp;4118 9838 0867 5175</div>
+        <div>489412469</div>
       </div>
     </ion-item>
   </div>
@@ -55,7 +55,7 @@
       <ion-icon class="fs-40 text-primary" name="person-outline"></ion-icon>
       <div style="margin-left: 10px;" class="fs-16">
         <div class="fw-500">Applicant</div>
-        <div>Joaqin Bordado</div>
+        <div>John Doe</div>
       </div>
     </ion-item>
   </div>
@@ -65,27 +65,39 @@
       <ion-icon class="fs-40 text-primary" name="business-outline"></ion-icon>
       <div style="margin-left: 10px;" class="fs-16">
         <div class="fw-500">Lender</div>
-        <div>Debt complete</div>
+        <div>BDO Unibank INC</div>
       </div>
     </ion-item>
   </div>
 
   <div>
     <ion-item lines="none" class="loan-info">
-      <ion-icon class="fs-40 text-primary" name="cash-outline"></ion-icon>
+      <ion-icon class="fs-40 text-primary" name="calendar-outline"></ion-icon>
       <div style="margin-left: 10px;" class="fs-16">
-        <div class="fw-500">Loan Amount</div>
-        <div>Debt complete</div>
+        <div class="fw-500">Monthly Payment</div>
+        <div>₱ 208,333.00</div>
+      </div>
+    </ion-item>
+  </div>
+
+  <div>
+    <ion-item lines="none" class="loan-info">
+      <ion-icon class="fs-40 text-primary" name="server-outline"></ion-icon>
+      <div style="margin-left: 10px;" class="fs-16">
+        <div class="fw-500">Interest Rate</div>
+        <div>7%</div>
       </div>
     </ion-item>
   </div>
 
   <div class="separator"></div>
   <div class="mt-1 fs-18 fw-500">Loan Status</div>
-  <div>Loan Amount<span class="" style="float: right;">₱ 1,600,000.00</span></div>
-  <div class="mb-1">Paid Amount<span class="" style="float: right;">₱ 480,000.00</span></div>
+  <div>Loan Amount<span class="" style="float: right;">₱ 5,000,000.00</span></div>
+  <div class="mb-1">Paid Amount<span class="" style="float: right;">₱ 2,083,333.00</span></div>
   <div class="separator"></div>
-  <div class="mt-1 fs-18 fw-500">Remaining Balance<span style="float:right">₱ 1,120,000.00</span></div>
-
+  <div class="mt-1 fs-18 fw-500">Remaining Balance<span style="float:right">₱ 2,916,670.00</span></div>
+  <div class="mt-2">
+    <ion-button class="btn-primary">Pay Loan</ion-button>
+  </div>
 </ion-content>
 

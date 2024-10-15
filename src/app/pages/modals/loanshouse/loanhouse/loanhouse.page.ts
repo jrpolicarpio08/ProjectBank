@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { MayniladpaidPage } from '../mayniladpaid/mayniladpaid.page';
+import { LoanhouseverifyPage } from '../loanhouseverify/loanhouseverify.page';
 
 @Component({
-  selector: 'app-mayniladverify',
-  templateUrl: './mayniladverify.page.html',
-  styleUrls: ['./mayniladverify.page.scss'],
+  selector: 'app-loanhouse',
+  templateUrl: './loanhouse.page.html',
+  styleUrls: ['./loanhouse.page.scss'],
 })
-export class MayniladverifyPage implements OnInit {
+export class LoanhousePage implements OnInit {
 
   constructor(private modalCtrl: ModalController) { }
 
@@ -18,9 +18,9 @@ export class MayniladverifyPage implements OnInit {
     this.modalCtrl.dismiss();
   }
 
-  billpaidmaynilad(){
+  loanhousepay(){
     this.modalCtrl.create({
-      component: MayniladpaidPage
+      component: LoanhouseverifyPage
     }).then(modalres => {
       modalres.present();
     })

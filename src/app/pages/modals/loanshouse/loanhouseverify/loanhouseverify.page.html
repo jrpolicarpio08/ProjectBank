@@ -1,0 +1,20 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="translucent">
+
+    <ion-buttons slot="start">
+      <ion-button fill="clear" [disabled]="true">
+        <div></div>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons class="text-danger" slot="end">
+      <ion-button id="present-alert" fill="clear">Cancel</ion-button>
+      <ion-alert mode="ios" trigger="present-alert" class="custom-alert" header="Are you sure?" subHeader="Cancel transaction" [buttons]="alertButtons"></ion-alert>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  
+</ion-content>

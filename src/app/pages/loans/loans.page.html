@@ -1,4 +1,4 @@
-<ion-header class="ion-no-border">
+<ion-header  class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button fill="clear" class="" onclick="location.href='/mainmenu'">
@@ -30,49 +30,43 @@
     <div *ngSwitchCase="'all'">
 
       <div class="mt-1">
-        <div class="loan-details" id="open-modal" (click)="loancar()">
+        <div class="loan-details" (click)="loancar()">
           <div class="ion-padding">
             <div class="fs-20 fw-900 text-primary">Subaru XV 2020 <span style="float: right;" class="fw-200 text-medium"> <ion-icon name="time-outline"></ion-icon> 46 Months Left </span></div>
-            <div class="loan-desc text-medium fs-14">
-              <p>My dream car finally</p>
-            </div>
+            <div class="loan-desc fs-14">Loan Status: <span class="text-uppercase text-success">PAID</span></div>
           </div>
           <div class="separator"></div>
           <div class="ion-padding">
-            <div class="fw-900 fs-20 text-primary"> 30% <span style="float:right"> ₱  480,000 </span></div>
-            <ion-progress-bar class="loan-prog-bar" value=".30"></ion-progress-bar>
+            <div class="fw-900 fs-20 text-primary"> 25% <span style="float:right"> ₱  360,000 </span></div>
+            <ion-progress-bar class="loan-prog-bar" value=".25"></ion-progress-bar>
           </div>
         </div>
       </div>
 
       <div class="mt-2">
-        <div class="loan-details" id="open-modal1">
+        <div class="loan-details" (click)="loanhouse()">
           <div class="ion-padding">
-            <div class="fs-20 fw-900 text-primary">Dream House <span style="float: right;" class="fw-200 text-medium"> <ion-icon name="time-outline"></ion-icon> 92 Months Left </span></div>
-            <div class="loan-desc text-medium fs-14">
-              <p>My very own house </p>
-            </div>
+            <div class="fs-20 fw-900 text-primary">Dream House <span style="float: right;" class="fw-200 text-medium"> <ion-icon name="time-outline"></ion-icon> 90 Months Left </span></div>
+            <div class="loan-desc fs-14">Due Date:  <span class="text-uppercase text-danger">10/31/2024 </span></div>
           </div>
           <div class="separator"></div>
           <div class="ion-padding">
-            <div class="fw-900 fs-20 text-primary"> 10% <span style="float:right"> ₱  100,000 </span></div>
-            <ion-progress-bar class="loan-prog-bar" value=".10"></ion-progress-bar>
+            <div class="fw-900 fs-20 text-primary"> 8% <span style="float:right"> ₱  163,000 </span></div>
+            <ion-progress-bar class="loan-prog-bar" value=".08"></ion-progress-bar>
           </div>
         </div>
       </div>
 
       <div class="mt-2">
-        <div class="loan-details">
+        <div class="loan-details" (click)="loanbusiness()">
           <div class="ion-padding">
-            <div class="fs-20 fw-900 text-primary">INTDM Garage<span style="float: right;" class="fw-200 text-medium"> <ion-icon name="time-outline"></ion-icon> 26 Months Left </span></div>
-            <div class="loan-desc text-medium fs-14">
-              <p>Performance specialized vehicle shop </p>
-            </div>
+            <div class="fs-20 fw-900 text-primary">INTDM Garage<span style="float: right;" class="fw-200 text-medium"> <ion-icon name="time-outline"></ion-icon> 10 Months Left </span></div>
+            <div class="loan-desc fs-14">Due Date:  <span class="text-uppercase text-danger">10/31/2024 </span></div>
           </div>
           <div class="separator"></div>
           <div class="ion-padding">
-            <div class="fw-900 fs-20 text-primary"> 50% <span style="float:right"> ₱  5,000,000 </span></div>
-            <ion-progress-bar class="loan-prog-bar" value=".50"></ion-progress-bar>
+            <div class="fw-900 fs-20 text-primary"> 41% <span style="float:right"> ₱ 2,083,333 </span></div>
+            <ion-progress-bar class="loan-prog-bar" value=".41"></ion-progress-bar>
           </div>
         </div>
       </div>

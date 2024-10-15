@@ -201,7 +201,31 @@ const routes: Routes = [
   },
   {
     path: 'loancar',
-    loadChildren: () => import('./pages/modals/loancar/loancar.module').then( m => m.LoancarPageModule)
+    loadChildren: () => import('./pages/modals/loanscar/loancar/loancar.module').then( m => m.LoancarPageModule)
+  },
+  {
+    path: 'loanhouse',
+    loadChildren: () => import('./pages/modals/loanshouse/loanhouse/loanhouse.module').then( m => m.LoanhousePageModule)
+  },
+  {
+    path: 'loanbusiness',
+    loadChildren: () => import('./pages/modals/loansbusiness/loanbusiness/loanbusiness.module').then( m => m.LoanbusinessPageModule)
+  },
+  {
+    path: 'loanhouseverify',
+    loadChildren: () => import('./pages/modals/loanshouse/loanhouseverify/loanhouseverify.module').then( m => m.LoanhouseverifyPageModule)
+  },
+  {
+    path: 'meralcopaid',
+    loadChildren: () => import('./pages/modals/billsmeralco/meralcopaid/meralcopaid.module').then( m => m.MeralcopaidPageModule)
+  },
+  {
+    path: 'mayniladpaid',
+    loadChildren: () => import('./pages/modals/billsmaynilad/mayniladpaid/mayniladpaid.module').then( m => m.MayniladpaidPageModule)
+  },
+  {
+    path: 'convergepaid',
+    loadChildren: () => import('./pages/modals/billsconverge/convergepaid/convergepaid.module').then( m => m.ConvergepaidPageModule)
   },
 ];
 

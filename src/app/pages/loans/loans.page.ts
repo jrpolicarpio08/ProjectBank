@@ -1,6 +1,8 @@
 import { Component, OnInit} from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { LoancarPage } from '../modals/loancar/loancar.page';
+import { LoancarPage } from '../modals/loanscar/loancar/loancar.page';
+import { LoanhousePage } from '../modals/loanshouse/loanhouse/loanhouse.page';
+import { LoanbusinessPage } from '../modals/loansbusiness/loanbusiness/loanbusiness.page';
 
 
 @Component({
@@ -24,6 +26,22 @@ export class LoansPage implements OnInit {
   loancar(){
     this.modalCtrl.create({
       component: LoancarPage
+    }).then(modalres => {
+      modalres.present();
+    })
+  }
+
+  loanhouse(){
+    this.modalCtrl.create({
+      component: LoanhousePage
+    }).then(modalres => {
+      modalres.present();
+    })
+  }
+
+  loanbusiness(){
+    this.modalCtrl.create({
+      component: LoanbusinessPage
     }).then(modalres => {
       modalres.present();
     })

@@ -3,52 +3,55 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
-  <div class="mb-3">
-    <div class="phone-container"></div>
-    <ion-icon class="phone-icon" name="phone-portrait-outline"></ion-icon>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="fs-30 fw-500">Confirm Details</div>
+  <div class="fs-16 text-medium">Ensure all informations are correct.</div>
+  <div class="mt-1 ion-padding transfer-id ">
+    <div class="fs-18 fw-500">Transaction in progress&nbsp;<ion-spinner class="spinner" color="primary"></ion-spinner></div>
+    <div class="fs-14 text-medium">To continue confirm the details below and click confirm.</div>
+    <div class="fs-15 mt-1">Transaction ID:&nbsp;&nbsp;3L3CTR1C&nbsp;&nbsp;<a id="open-toast"><ion-icon name="copy-outline"></ion-icon></a></div>
+    <ion-toast position="top" trigger="open-toast" message="Copied!" [duration]="5000"></ion-toast>
+    <div class="fs-15">Date:&nbsp;&nbsp;08/16/2024</div>
   </div>
-  <div class="fs-24">Please enter the OTP we sent</div>
-  <div class="text-medium fs-18">In order to continue this transaction</div>
-  <div class="text-medium fs-18">A 5 digit code has been sent to</div>
-  <div class="text-primary fs-20 mt-1">+63 126 343 120</div>
-  <div class="mb-4 mt-2">
-    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="1">
-    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" Value="N">
-    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="T">
-    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="3">
-    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="R">
+  <div class="fs-18 mt-2 fw-500">Transaction Summary</div>
+  <div>
+    <ion-item lines="none" class="transfer-info">
+      <ion-icon class="fs-40 text-primary" name="wallet-outline"></ion-icon>
+      <div style="margin-left: 10px;" class="fs-16">
+        <div class="fw-500">Bill</div>
+        <div>Meralco</div>
+      </div>
+    </ion-item>
   </div>
-  <ion-toast position="top" positionAnchor="header" trigger="open-toast" message="" [duration]="5000"></ion-toast>
-  <ion-button class="btn-primary" id="open-modal">Verify</ion-button>
-  <ion-button fill="clear" color="danger" (click)="close()">Cancel</ion-button>
-  <div class="text-medium mt-2 mb-5">Didn't receive the code? <a id="open-toast">Resend</a></div>
-  <div class="fw-500" style="margin-bottom: 5px;">Need help?</div>
-  <div>Visit our <span><a href="support" style="text-decoration: none;">Help Center</a></span>  to learn more</div>
-  
-  <!-- modal section -->
-  <ion-modal id="tcomplete" trigger="open-modal" [initialBreakpoint]="0.6" [breakpoints]="[0.6,]">
-    <ng-template>
-      <ion-content class="ion-padding">
-        <div class="ion-text-center">
-          <div>
-            <ion-icon class="text-primary mt-1" style="font-size: 150px;" name="checkmark-circle"></ion-icon>
-            <div class="fs-24 fw-500">Transaction Complete</div>
-            <div class="fs-18 text-medium">9th of September, 2024</div>
-            <div class="mt-1 fw-500 fs-30">- ₱2666.00</div>
-          </div>
-        </div>
-        <div class="mt-5">
-          <div class="fs-18 mt-2">Bill <span class="fs-18" style="float: right;">Converge</span></div>
-          <div class="fs-18 mt-1">Account number <span class="fs-18" style="float: right;">709 949 761 7062</span></div>
-          <div class="mt-2">
-            <ion-button class="btn-primary" onclick="location.href='/bills'">Done</ion-button>
-          </div>
-        </div>
-      </ion-content>
-    </ng-template>
-  
-  </ion-modal>
-  <!-- modal section -->
-   
+  <div>
+    <ion-item lines="none" class="transfer-info">
+      <ion-icon class="fs-40 text-primary" name="briefcase-outline"></ion-icon>
+      <div style="margin-left: 10px;" class="fs-16">
+        <div class="fw-500">Account Number</div>
+        <div>5712003794</div>
+      </div>
+    </ion-item>
+  </div>
+  <div>
+    <ion-item lines="none" class="transfer-info">
+      <ion-icon class="fs-40 text-primary" name="briefcase-outline"></ion-icon>
+      <div style="margin-left: 10px;" class="fs-16">
+        <div class="fw-500">Account Used</div>
+        <div>BDO:&nbsp;8467 3211 9998 7551</div>
+      </div>
+    </ion-item>
+  </div>
+  <div class="mt-1 transfer-amnt">
+    <div class="mt-1 fs-18 fw-500">Payment Summary</div>
+    <div style="margin-top:10px">Bill Amount<span class="" style="float:right">₱ 9,800.00</span></div>
+    <div>Transaction Charge<span class="" style="float:right">₱ 10.00</span></div>
+  </div>
+  <div class="fs-18 fw-500 mt-1">Total Amount<span style="float:right">₱ 9,810.00</span></div>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="ion-padding">
+    <ion-button class="btn-primary" (click)="billpaidconverge()">Confirm</ion-button>
+    <ion-button color="danger" class="btn" (click)="close()">Cancel</ion-button>
+  </ion-toolbar>
+</ion-footer>

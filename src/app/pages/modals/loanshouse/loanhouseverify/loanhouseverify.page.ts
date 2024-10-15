@@ -2,15 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-editprofile',
-  templateUrl: './editprofile.page.html',
-  styleUrls: ['./editprofile.page.scss'],
+  selector: 'app-loanhouseverify',
+  templateUrl: './loanhouseverify.page.html',
+  styleUrls: ['./loanhouseverify.page.scss'],
 })
-export class EditprofilePage implements OnInit {
+export class LoanhouseverifyPage implements OnInit {
 
   constructor(private modalCtrl: ModalController) { }
 
   ngOnInit() {
+  }
+
+  close(){
+    this.modalCtrl.dismiss();
   }
 
   public alertButtons = [
@@ -24,4 +28,5 @@ export class EditprofilePage implements OnInit {
       },
     },
   ];
+
 }
