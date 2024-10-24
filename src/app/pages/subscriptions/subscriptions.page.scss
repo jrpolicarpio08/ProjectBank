@@ -1,0 +1,42 @@
+.total-subscription{
+    height: 110px;
+    background-color: #3880ff;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
+}
+.total-sub-count{
+    margin-right: 20px;
+    line-height: 30px;
+    float: right;
+    margin-top: 12px;
+}
+.subscription{
+    height: 140px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
+}
+.subsciption-icon{
+    background-color: #3880ff;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-bottom: 19px;
+}
+.subscription-due-date{
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+.subscription-paid{
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 60px;
+    margin-top: 8px;
+}
+.subscription-info{
+    margin-top: 8px;
+}

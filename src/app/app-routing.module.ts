@@ -164,20 +164,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/modals/billsconverge/convergedelete/convergedelete.module').then( m => m.ConvergedeletePageModule)
   },
   {
-    path: 'billsadd',
-    loadChildren: () => import('./pages/billsadd/billsadd.module').then( m => m.BillsaddPageModule)
-  },
-  {
     path: 'sssreceipt',
     loadChildren: () => import('./pages/modals/billsSSS/sssreceipt/sssreceipt.module').then( m => m.SssreceiptPageModule)
   },
   {
     path: 'phealthreceipt',
     loadChildren: () => import('./pages/modals/billsphilhealth/phealthreceipt/phealthreceipt.module').then( m => m.PhealthreceiptPageModule)
-  },
-  {
-    path: 'billsaddcomplete',
-    loadChildren: () => import('./pages/billsaddcomplete/billsaddcomplete.module').then( m => m.BillsaddcompletePageModule)
   },
   {
     path: 'cards',
@@ -226,6 +218,46 @@ const routes: Routes = [
   {
     path: 'convergepaid',
     loadChildren: () => import('./pages/modals/billsconverge/convergepaid/convergepaid.module').then( m => m.ConvergepaidPageModule)
+  },
+  {
+    path: 'loanhousepaid',
+    loadChildren: () => import('./pages/modals/loanshouse/loanhousepaid/loanhousepaid.module').then( m => m.LoanhousepaidPageModule)
+  },
+  {
+    path: 'loanbusinessverify',
+    loadChildren: () => import('./pages/modals/loansbusiness/loanbusinessverify/loanbusinessverify.module').then( m => m.LoanbusinessverifyPageModule)
+  },
+  {
+    path: 'loanbusinesspaid',
+    loadChildren: () => import('./pages/modals/loansbusiness/loanbusinesspaid/loanbusinesspaid.module').then( m => m.LoanbusinesspaidPageModule)
+  },
+  {
+    path: 'loancollege',
+    loadChildren: () => import('./pages/modals/loanscollege/loancollege/loancollege.module').then( m => m.LoancollegePageModule)
+  },
+  {
+    path: 'addloan',
+    loadChildren: () => import('./pages/addloan/addloan.module').then( m => m.AddloanPageModule)
+  },
+  {
+    path: 'addbills',
+    loadChildren: () => import('./pages/addbills/addbills.module').then( m => m.AddbillsPageModule)
+  },
+  {
+    path: 'addbillsuccess',
+    loadChildren: () => import('./pages/addbillsuccess/addbillsuccess.module').then( m => m.AddbillsuccessPageModule)
+  },
+  {
+    path: 'addloansuccess',
+    loadChildren: () => import('./pages/addloansuccess/addloansuccess.module').then( m => m.AddloansuccessPageModule)
+  },
+  {
+    path: 'transactions',
+    loadChildren: () => import('./pages/transactions/transactions.module').then( m => m.TransactionsPageModule)
+  },
+  {
+    path: 'subgame',
+    loadChildren: () => import('./pages/modals/subsgame/subgame/subgame.module').then( m => m.SubgamePageModule)
   },
 ];
 

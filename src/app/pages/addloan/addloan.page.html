@@ -1,0 +1,77 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear" class="" onclick="location.href='/loans'">
+        <ion-icon  class="fs-25 text-dark" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="fs-25 ion-text-center">Add Loan</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [disabled]="true" fill="clear" class="">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="ion-text-center">
+    <ion-icon class="text-primary" style="font-size: 120px;" name="newspaper-outline"></ion-icon>
+  </div>
+
+  <div class="mt-2 fw-500">Loan Type</div>
+  <div>
+    <ion-item lines="none" class="acc-select-dd mb-1">
+      <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="Electricity">
+        <ion-select-option>Electricity</ion-select-option>
+        <ion-select-option>Water</ion-select-option>
+        <ion-select-option>Heat</ion-select-option>
+        <ion-select-option>Internet</ion-select-option>
+        <ion-select-option>Health</ion-select-option>
+        <ion-select-option>Pension</ion-select-option>
+        <ion-select-option>Insurance</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <div class="mt-1 fw-500">Loan Name</div>
+  <div>
+    <ion-item lines="none" class="input-amount">
+      <ion-input value="Meralco"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="mt-1 fw-500">Loan ID</div>
+  <div>
+    <ion-item lines="none" class="input-amount">
+      <ion-input value="5712003794"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="mt-1 fw-500">Applicant Name</div>
+  <div>
+    <ion-item lines="none" class="input-amount">
+      <ion-input value="Meralco"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="mt-1 fw-500">Lender</div>
+  <div>
+    <ion-item lines="none" class="acc-select-dd mb-1">
+      <ion-select mode="ios" toggleIcon="caret-down-sharp" expandedIcon="caret-up-sharp" labelPlacement="stacked" label="" value="Electricity">
+        <ion-select-option>Electricity</ion-select-option>
+        <ion-select-option>Water</ion-select-option>
+        <ion-select-option>Heat</ion-select-option>
+        <ion-select-option>Internet</ion-select-option>
+        <ion-select-option>Health</ion-select-option>
+        <ion-select-option>Pension</ion-select-option>
+        <ion-select-option>Insurance</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+</ion-content>
+<ion-footer class="ion-no-border ion-padding">
+  <ion-toolbar>
+    <ion-button class="btn" onclick="location.href='/addloansuccess'">Add Bill</ion-button>
+  </ion-toolbar>
+</ion-footer>

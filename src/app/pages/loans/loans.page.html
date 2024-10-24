@@ -7,7 +7,7 @@
     </ion-buttons>
     <ion-title class="fs-25 ion-text-center">Loans</ion-title>
     <ion-buttons slot="end">
-      <ion-button fill="clear" onclick="location.href='/addcard'">
+      <ion-button fill="clear" onclick="location.href='/addloan'">
         <ion-icon class="fs-25" name="add-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -76,7 +76,21 @@
 
     <!-- accounts section -->
     <div class="" *ngSwitchCase="'mentions'">
-      
+
+      <div class="mt-1">
+        <div class="loan-details" (click)="loancollege()">
+          <div class="ion-padding">
+            <div class="fs-20 fw-900 text-primary">College Tuition<span style="float: right;" class="fw-200 text-success fs-30"> <ion-icon name="checkmark-circle-outline"></ion-icon></span></div>
+            <div class="loan-desc fs-14 text-uppercase text-success">Complete</div>
+          </div>
+          <div class="separator"></div>
+          <div class="ion-padding">
+            <div class="fw-900 fs-20 text-primary"> 100% <span style="float:right"> ₱ 170,000</span></div>
+            <ion-progress-bar class="loan-prog-bar" value="1"></ion-progress-bar>
+          </div>
+        </div>
+      </div>
+
     </div>
     <!-- account section -->
   </ng-container>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { LoanbusinessverifyPage } from '../loanbusinessverify/loanbusinessverify.page';
 
 @Component({
   selector: 'app-loanbusiness',
@@ -17,5 +18,12 @@ export class LoanbusinessPage implements OnInit {
     this.modalCtrl.dismiss();
   }
 
+  loanbusinesspay(){
+    this.modalCtrl.create({
+      component: LoanbusinessverifyPage
+    }).then(modalres => {
+      modalres.present();
+    })
+  }
 
 }

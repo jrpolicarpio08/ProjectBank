@@ -3,6 +3,7 @@ import { ModalController } from '@ionic/angular';
 import { LoancarPage } from '../modals/loanscar/loancar/loancar.page';
 import { LoanhousePage } from '../modals/loanshouse/loanhouse/loanhouse.page';
 import { LoanbusinessPage } from '../modals/loansbusiness/loanbusiness/loanbusiness.page';
+import { LoancollegePage } from '../modals/loanscollege/loancollege/loancollege.page';
 
 
 @Component({
@@ -47,5 +48,12 @@ export class LoansPage implements OnInit {
     })
   }
 
+  loancollege(){
+    this.modalCtrl.create({
+      component: LoancollegePage
+    }).then(modalres => {
+      modalres.present();
+    })
+  }
 
 }

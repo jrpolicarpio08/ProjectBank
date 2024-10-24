@@ -7,38 +7,6 @@ swiper-container{
     border-radius: 10px;
     --min-height: 80px;
 }
-.pg-btn{
-    --min-height: 70px;
-    width: 70px;
-    --background: #3880ff;
-    --border-radius: 8px;
-    --color:#FFFFFF;
-    margin-right: 0.3rem;
-    .pg-icon{
-        font-size: 30px;
-    }
-    .pg-lbl{
-        font-size: 13px;
-    }
-}
-.transfer{
-    --padding-start: 10px;
-}
-.deposit{
-    --padding-start: 12px;
-}
-.vouchers{
-    --padding-start: 12px;
-    .pg-lbl{
-        font-size: 11px;
-    }
-}
-.bills{
-    --padding-start: 20px;
-}
-.cards{
-    --padding-start: 17px
-}
 .sub-btn{
     --border-radius: 10px;
     --min-height: 48px;
@@ -47,16 +15,6 @@ swiper-container{
     min-width: 100%;
     color: #FFFFFF;
     margin-bottom: 5px;
-}
-@media only screen and (max-width: 371px) and (min-width: 340px) {
-    .pg-btn{
-    margin-right: 0.3rem;
-    }
-}
-@media only screen and (max-width: 900px) and (min-width: 372px) {
-    .pg-btn{
-    margin-right: 0.3rem;
-}
 .acc-side-menu{
     --padding-start: 0px;
     margin-right: -10px;
@@ -76,12 +34,45 @@ swiper-container{
     border-radius: 20px;
     color: #FFFFFF;
 }
-// .acc-status-icon{
-//     font-size: 25px;
-//     position: absolute;
-//     left: 31px;
-//     top: 12px;
-// }
 .side-menu-button{
     --padding-start: 20px;
 }
+
+.page-button{
+    --padding-start: 5px;
+    --padding-end: 20px;
+    --min-height: 70px ;
+    width: 70px;
+    --background: #3880ff;
+    --border-radius: 8px;
+    --color:#FFFFFF;
+    overflow: visible;
+    margin-right: 0.3rem;
+
+    .page-icon-transaction,
+    .page-icon-cards,
+    .page-icon-bills,
+    .page-icon-transfer,
+    .page-icon-deposit{
+        margin-left: 15px;
+    }
+
+    .page-button-label-transfer{
+        margin-left: 3px;
+    }
+
+    .page-button-label-cards{
+        margin-left: 10px;
+    }
+
+    .page-button-label-bills{
+        margin-left: 16px;
+    }
+
+    .page-button-label-deposit{
+        margin-left: 6px;
+    }
+
+}
+
+

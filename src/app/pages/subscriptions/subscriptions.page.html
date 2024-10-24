@@ -1,13 +1,122 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>subscriptions</ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar class="mmheader">
+    <ion-buttons slot="start">
+      <ion-button fill="clear"  onclick="location.href='/mainmenu'">
+        <ion-icon  class="fs-25 text-dark" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="fs-25 ion-text-center">Subscriptions</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" >
+        <ion-icon class="fs-25" name="add-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
+
+  <ion-toolbar>
+    <div class="ion-padding">
+      <div class="total-subscription ion-padding text-white">
+        <div class="fs-20 fw-500">Total Subsciptions 
+          <span class="ion-text-center total-sub-count">
+            <div class="fs-40 fw-500">04</div>
+            <div class="fs-20">Total</div>
+          </span>
+        </div>
+        <div class="mt-1 fw-500">Due for this month</div>
+        <div >₱ 5,0000</div>
+      </div>
+    </div>
+  </ion-toolbar>
+  
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">subscriptions</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div>
+    <div class="subscription ion-padding" (click)="viewsubgame()"> 
+      <div class="d-flex" style="margin-top: 7px;">
+        <div class="subsciption-icon ion-text-center">
+          <div class="text-white">
+            <ion-icon class="fs-50" name="game-controller-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="ml-1 subscription-info">
+          <div class="fw-500">Final Fantasy 14</div>
+          <div>₱ 720/Month</div>
+          <div>31st Oct</div>
+        </div>
+        <div class="subscription-due-date ion-text-center">
+          <div class="fs-30 fw-500">02</div>
+          <div class="fs-15">Day's Left</div>
+        </div>
+      </div>
+      <ion-progress-bar value="0.93"></ion-progress-bar>
+    </div>
+  </div>
+
+  <div class="mt-1">
+    <div class="subscription ion-padding">
+      <div class="d-flex" style="margin-top: 7px;">
+        <div class="subsciption-icon ion-text-center">
+          <div class="text-white">
+            <ion-icon class="fs-50" name="tv-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="ml-1 subscription-info">
+          <div class="fw-500">Youtube Premium</div>
+          <div>₱ 200/Month</div>
+          <div>15th Oct</div>
+        </div>
+        <div class="subscription-paid ion-text-center">
+          <ion-icon class="text-success" name="checkmark-circle-outline"></ion-icon>
+        </div>
+      </div>
+      <ion-progress-bar value="1"></ion-progress-bar>
+    </div>
+  </div>
+
+  <div class="mt-1">
+    <div class="subscription ion-padding">
+      <div class="d-flex" style="margin-top: 7px;">
+        <div class="subsciption-icon ion-text-center">
+          <div class="text-white">
+            <ion-icon class="fs-50" name="restaurant-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="ml-1 subscription-info">
+          <div class="fw-500">Grab Premium</div>
+          <div>₱ 75/Month</div>
+          <div>31st Oct</div>
+        </div>
+        <div class="subscription-due-date ion-text-center">
+          <div class="fs-30 fw-500">02</div>
+          <div class="fs-15">Day's Left</div>
+        </div>
+      </div>
+      <ion-progress-bar value="0.93"></ion-progress-bar>
+    </div>
+  </div>
+  
+  <div class="mt-1">
+    <div class="subscription ion-padding">
+      <div class="d-flex" style="margin-top: 7px;">
+        <div class="subsciption-icon ion-text-center">
+          <div class="text-white">
+            <ion-icon class="fs-50" name="headset-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="ml-1 subscription-info">
+          <div class="fw-500">Spotify</div>
+          <div>₱ 250/Month</div>
+          <div>15th Oct</div>
+        </div>
+        <div class="subscription-paid ion-text-center">
+          <ion-icon class="text-success" name="checkmark-circle-outline"></ion-icon>
+        </div>
+      </div>
+      <ion-progress-bar value="1"></ion-progress-bar>
+    </div>
+  </div>
+
 </ion-content>

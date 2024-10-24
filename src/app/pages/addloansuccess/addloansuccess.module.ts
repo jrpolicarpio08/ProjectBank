@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BillsaddcompletePageRoutingModule } from './billsaddcomplete-routing.module';
+import { AddloansuccessPageRoutingModule } from './addloansuccess-routing.module';
 
-import { BillsaddcompletePage } from './billsaddcomplete.page';
+import { AddloansuccessPage } from './addloansuccess.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BillsaddcompletePageRoutingModule
+    AddloansuccessPageRoutingModule
   ],
-  declarations: [BillsaddcompletePage]
+  declarations: [AddloansuccessPage]
 })
-export class BillsaddcompletePageModule {}
+export class AddloansuccessPageModule {}

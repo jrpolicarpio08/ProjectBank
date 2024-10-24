@@ -1,0 +1,22 @@
+.loan-logo-container{
+    margin: auto;
+    padding-top: 13px;
+    min-height: 80px;
+    width: 80px;
+    background-color: #3880ff;
+    border-radius: 10px;
+}
+.loan-due-content{
+    border-radius: 15px;
+    min-width: 100%;
+    --min-height: 80px;
+    --background: #3880ff;
+    border: 2px solid #fff;
+}
+.separator{
+    border: 1px solid black;
+}
+.loan-info{
+    margin-top: 8px;
+    --padding-start: 0px;
+}

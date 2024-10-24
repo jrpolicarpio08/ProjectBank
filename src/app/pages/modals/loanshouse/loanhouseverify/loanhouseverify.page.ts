@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { LoanhousepaidPage } from '../loanhousepaid/loanhousepaid.page';
 
 @Component({
   selector: 'app-loanhouseverify',
@@ -16,17 +17,13 @@ export class LoanhouseverifyPage implements OnInit {
   close(){
     this.modalCtrl.dismiss();
   }
-
-  public alertButtons = [
-    {
-      text: 'Cancel',
-    },
-    {
-      text: 'Confirm',
-      handler: () => {
-        this.modalCtrl.dismiss();
-      },
-    },
-  ];
+  
+  loanhousepaid(){
+    this.modalCtrl.create({
+      component: LoanhousepaidPage
+    }).then(modalres => {
+      modalres.present();
+    })
+  }
 
 }
