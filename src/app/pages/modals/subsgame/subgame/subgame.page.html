@@ -36,21 +36,35 @@
 
   <ng-container [ngSwitch]="type" class="">
     <!-- plan section -->
-    <div class="ion-padding" *ngSwitchCase="'all'">
+    <div class="ion-padding fs-20" *ngSwitchCase="'all'">
       <div class="mt-1 fw-500 fs-25">Monthly <span class="" style="float:right"> ₱ 720 </span></div>
-      <div class="mt-1 fs-20">Game Access <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
-      <div class="mt-1 fs-20">Access on any device <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
-      <div class="mt-1 fs-20">In game rewards <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
-      <div class="mt-1 fs-20">Access to in game shop <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
+      <div class="mt-1">Game Access <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
+      <div class="mt-1">Access on any device <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
+      <div class="mt-1">In game rewards <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
+      <div class="mt-1">Access to in game shop <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
     </div>
     <!-- plan section -->
 
     <!-- details section -->
-    <div class="ion-padding" *ngSwitchCase="'mentions'">
-      <div class="">test2</div>
+    <div class="ion-padding fs-20" *ngSwitchCase="'mentions'">
+      <div class="mt-1 fw-500 fs-25">Account Info</div>
+      <div class="mt-1">Account ID <span style="float:right"> 0081933 </span></div>
+      <div class="mt-1">E-mail <span style="float:right"> johndoe&#64;gmail.com </span></div>
+      <div class="mt-1">Card Used <span style="float:right"> 8467 3211 9998 7551 </span></div>
+      <div class="mt-1">Due Date <span style="float:right">10/31/2024</span></div>
+      <div class="mt-1">Status <span style="float:right">Pending</span></div>
+      <div class="mt-1">Auto Renew <span style="float:right"> <ion-toggle mode="ios" class="fs-20 fw-500"></ion-toggle> </span></div>
     </div>
     <!-- details section -->
   </ng-container>
 
-
 </ion-content>
+
+<ion-footer class="ion-padding ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="btn" (click)="subgame()">Renew</ion-button>
+    <ion-button expand="block" id="confirm-remove" class="btn mt-1" color="danger">Remove</ion-button>
+    <ion-alert mode="ios" trigger="confirm-remove" class="custom-alert" header="Are you sure" subHeader="Do you really want to cancel this subcscription?"
+    [buttons]="alertButtons"></ion-alert>
+  </ion-toolbar>
+</ion-footer>

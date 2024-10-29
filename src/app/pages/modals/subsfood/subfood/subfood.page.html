@@ -1,0 +1,70 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="translucent">
+
+    <ion-buttons slot="start">
+      <ion-button fill="clear" [disabled]="true">
+        <div></div>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons class="text-danger" slot="end" (click)="close()">
+      <ion-button fill="clear">Close</ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="">
+
+  <div class="mt-3 ion-padding ion-text-center">
+    <div class="subscription-icon ion-text-center">
+      <ion-icon class="fs-50 text-white" name="restaurant-outline"></ion-icon>
+    </div>
+    <div class="fs-25 fw-500">Grab Food Premium</div>
+  </div>
+
+  <div class="mt-1">
+    <ion-segment [(ngModel)]="type">
+      <ion-segment-button value="all" class="tran-btn">
+        <ion-label>Plan</ion-label>
+      </ion-segment-button>
+      <ion-segment-button  value="mentions" class="acc-btn">
+        <ion-label>Details</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <ng-container [ngSwitch]="type" class="">
+    <!-- plan section -->
+    <div class="ion-padding fs-20" *ngSwitchCase="'all'">
+      <div class="mt-1 fw-500 fs-25">Monthly <span class="" style="float:right"> ₱ 75 </span></div>
+      <div class="mt-1">No delivery fee <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
+      <div class="mt-1">weekly Discount <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
+      <div class="mt-1">Priority Order <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
+      <div class="mt-1">Contactless Delivery <span style="float:right;"> <ion-icon class="fs-28 text-primary" name="checkmark-outline"></ion-icon> </span></div>
+    </div>
+    <!-- plan section -->
+
+    <!-- details section -->
+    <div class="ion-padding fs-20" *ngSwitchCase="'mentions'">
+      <div class="mt-1 fw-500 fs-25">Account Info</div>
+      <div class="mt-1">Account ID <span style="float:right"> 0933081 </span></div>
+      <div class="mt-1">E-mail <span style="float:right"> johndoe&#64;gmail.com </span></div>
+      <div class="mt-1">Card Used <span style="float:right"> 8467 3211 9998 7551 </span></div>
+      <div class="mt-1">Due Date <span style="float:right">10/31/2024</span></div>
+      <div class="mt-1">Status <span style="float:right">Pending</span></div>
+      <div class="mt-1">Auto Renew <span style="float:right"> <ion-toggle mode="ios" class="fs-20 fw-500"></ion-toggle> </span></div>
+    </div>
+    <!-- details section -->
+  </ng-container>
+
+</ion-content>
+
+<ion-footer class="ion-padding ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" class="btn" (click)="subfood()">Renew</ion-button>
+    <ion-button expand="block" id="confirm-remove" class="btn mt-1" color="danger">Remove</ion-button>
+    <ion-alert mode="ios" trigger="confirm-remove" class="custom-alert" header="Are you sure" subHeader="Do you really want to cancel this subcscription?"
+    [buttons]="alertButtons"></ion-alert>
+  </ion-toolbar>
+</ion-footer>

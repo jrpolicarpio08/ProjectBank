@@ -1,0 +1,53 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+  <div class="mb-3">
+    <div class="phone-container"></div>
+    <ion-icon class="phone-icon" name="phone-portrait-outline"></ion-icon>
+  </div>
+  <div class="fs-24">Please enter the OTP we sent</div>
+  <div class="text-medium fs-18">In order to continue this transaction</div>
+  <div class="text-medium fs-18">A 5 digit code has been sent to</div>
+  <div class="text-primary fs-20 mt-1">+63 126 343 120</div>
+  <div class="mb-4 mt-2">
+    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="B">
+    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" Value="1">
+    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="L">
+    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="L">
+    <input type="text" class="verify-input fs-26 fw-600" maxlength="1" value="5">
+  </div>
+  <ion-toast position="top" positionAnchor="header" trigger="open-toast" message="" [duration]="5000"></ion-toast>
+  <ion-button class="btn-primary" id="open-modal">Verify</ion-button>
+  <ion-button fill="clear" color="danger" (click)="close()">Cancel</ion-button>
+  <div class="text-medium mt-2 mb-5">Didn't receive the code? <a id="open-toast">Resend</a></div>
+  <div class="fw-500" style="margin-bottom: 5px;">Need help?</div>
+  <div>Visit our <span><a href="support" style="text-decoration: none;">Help Center</a></span>  to learn more</div>
+
+  <!-- modal section -->
+  <ion-modal id="tcomplete" trigger="open-modal" [initialBreakpoint]="0.6" [breakpoints]="[0.6,]">
+    <ng-template>
+      <ion-content class="ion-padding">
+        <div class="ion-text-center">
+          <div>
+            <ion-icon class="text-primary mt-1" style="font-size: 150px;" name="checkmark-circle"></ion-icon>
+            <div class="fs-24 fw-500">Transaction Complete</div>
+            <div class="fs-18 text-medium">31st of october, 2024</div>
+            <div class="mt-1 fw-500 fs-30">- ₱760.00</div>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="fs-18 mt-2">Subscription <span class="fs-18" style="float: right;">Final Fantasy 14</span></div>
+          <div class="fs-18 mt-1">Account ID <span class="fs-18" style="float: right;">0081933</span></div>
+          <div class="mt-2">
+            <ion-button class="btn-primary" onclick="location.href='/subscriptions'">Done</ion-button>
+          </div>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+  <!-- modal section -->
+   
+</ion-content>

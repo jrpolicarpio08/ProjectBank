@@ -259,6 +259,58 @@ const routes: Routes = [
     path: 'subgame',
     loadChildren: () => import('./pages/modals/subsgame/subgame/subgame.module').then( m => m.SubgamePageModule)
   },
+  {
+    path: 'subpaygame',
+    loadChildren: () => import('./pages/modals/subsgame/subpaygame/subpaygame.module').then( m => m.SubpaygamePageModule)
+  },
+  {
+    path: 'subgameverify',
+    loadChildren: () => import('./pages/modals/subsgame/subgameverify/subgameverify.module').then( m => m.SubgameverifyPageModule)
+  },
+  {
+    path: 'subgameremoved',
+    loadChildren: () => import('./pages/modals/subsgame/subgameremoved/subgameremoved.module').then( m => m.SubgameremovedPageModule)
+  },
+  {
+    path: 'subvideo',
+    loadChildren: () => import('./pages/modals/subsvideo/subvideo/subvideo.module').then( m => m.SubvideoPageModule)
+  },
+  {
+    path: 'subvideoremoved',
+    loadChildren: () => import('./pages/modals/subsvideo/subvideoremoved/subvideoremoved.module').then( m => m.SubvideoremovedPageModule)
+  },
+  {
+    path: 'subfood',
+    loadChildren: () => import('./pages/modals/subsfood/subfood/subfood.module').then( m => m.SubfoodPageModule)
+  },
+  {
+    path: 'subpayfood',
+    loadChildren: () => import('./pages/modals/subsfood/subpayfood/subpayfood.module').then( m => m.SubpayfoodPageModule)
+  },
+  {
+    path: 'subfoodverify',
+    loadChildren: () => import('./pages/modals/subsfood/subfoodverify/subfoodverify.module').then( m => m.SubfoodverifyPageModule)
+  },
+  {
+    path: 'subfoodremoved',
+    loadChildren: () => import('./pages/modals/subsfood/subfoodremoved/subfoodremoved.module').then( m => m.SubfoodremovedPageModule)
+  },
+  {
+    path: 'submusic',
+    loadChildren: () => import('./pages/modals/subsmusic/submusic/submusic.module').then( m => m.SubmusicPageModule)
+  },
+  {
+    path: 'submusicremoved',
+    loadChildren: () => import('./pages/modals/subsmusic/submusicremoved/submusicremoved.module').then( m => m.SubmusicremovedPageModule)
+  },
+  {
+    path: 'addsubscriptions',
+    loadChildren: () => import('./pages/addsubscriptions/addsubscriptions.module').then( m => m.AddsubscriptionsPageModule)
+  },
+  {
+    path: 'addsubscriptionsuccess',
+    loadChildren: () => import('./pages/addsubscriptionsuccess/addsubscriptionsuccess.module').then( m => m.AddsubscriptionsuccessPageModule)
+  },
 ];
 
 @NgModule({
