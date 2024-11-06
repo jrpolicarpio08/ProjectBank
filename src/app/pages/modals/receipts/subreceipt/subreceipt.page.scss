@@ -1,0 +1,41 @@
+.bill-logo-container{
+    margin: auto;
+    padding-top: 13px;
+    min-height: 80px;
+    width: 80px;
+    background-color: #3880ff;
+    border-radius: 10px;
+}
+.bill-content{
+    border-radius: 15px;
+    min-width: 100%;
+    --min-height: 80px;
+    --background: #3880ff;
+    border: 2px solid #fff;
+}
+
+.bill-separator{
+    border: 1.5px solid #fff;
+    background-color: #fff;
+    position: relative;
+    left: 18px;
+    top: 9px;
+    height: 35px;
+}
+.due-days{
+    margin-left: 35px;
+    margin-top: 18px;
+}
+.iselect{
+    height: 100px;
+}
+.acc-select-dd{
+    margin-top: 10px;
+    border: 2px solid #b2b2b3;
+    border-radius: 10px;
+    --padding-start: 20px;
+    height: 60px
+}
+.separator{
+    border: 1px solid black;
+}

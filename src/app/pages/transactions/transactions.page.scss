@@ -1,0 +1,47 @@
+.history-line{
+    position: relative;
+    margin-left: -20px;
+    width: 100vh;
+    height: 1px;
+    border: 2px solid #9f9fa1;
+    overflow-y: visible;
+}
+.transaction-date{
+    position: absolute;
+    height: 25px;
+    width: 150px;
+    background-color: #3880ff;
+    border-radius: 20px;
+    margin-top: -15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.transaction-date-label{
+    padding-top: 4px;
+}
+.transaction-item{
+    --min-height: 70px;
+    --padding-end: 10px;
+    border-radius: 10px;
+    border: 1px solid #9f9fa1;
+    --detail-icon-color: black;
+    --detail-icon-opacity: 1;
+    --detail-icon-font-size: 30px;
+
+}
+.transaction-history-icon-container{
+    background-color: #3880ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+.transaction-history-value{
+    position: absolute;
+    right: 10px;
+    margin-top: 12px;
+}
+.transaction-history-icon{
+    padding-top: 12px;
+    margin-left: 12px;
+}

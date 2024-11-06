@@ -311,6 +311,22 @@ const routes: Routes = [
     path: 'addsubscriptionsuccess',
     loadChildren: () => import('./pages/addsubscriptionsuccess/addsubscriptionsuccess.module').then( m => m.AddsubscriptionsuccessPageModule)
   },
+  {
+    path: 'loanreceipt',
+    loadChildren: () => import('./pages/modals/receipts/loanreceipt/loanreceipt.module').then( m => m.LoanreceiptPageModule)
+  },
+  {
+    path: 'transferreceipt',
+    loadChildren: () => import('./pages/modals/receipts/transferreceipt/transferreceipt.module').then( m => m.TransferreceiptPageModule)
+  },
+  {
+    path: 'depositreceipt',
+    loadChildren: () => import('./pages/modals/receipts/depositreceipt/depositreceipt.module').then( m => m.DepositreceiptPageModule)
+  },
+  {
+    path: 'subreceipt',
+    loadChildren: () => import('./pages/modals/receipts/subreceipt/subreceipt.module').then( m => m.SubreceiptPageModule)
+  },
 ];
 
 @NgModule({

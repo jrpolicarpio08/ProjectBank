@@ -13,7 +13,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding" scroll-y="false">
+<ion-content [fullscreen]="true" class="ion-padding">
   <div class="mt-1">
     <div class="ion-text-center text-primary" style="font-size: 120px;">
       <ion-icon name="card-outline"></ion-icon>
@@ -87,7 +87,7 @@
       </ion-col>
     </ion-row>
   </div>
-  <div class="iselect mt-1">
+  <div class="iselect mt-1 mb-5">
     <div class="fs-20">Message</div>
     <div>
       <ion-item lines="none" class="iselect-input">
@@ -95,9 +95,6 @@
       </ion-item>
     </div>
   </div>
+  <ion-button class="btn" onclick="location.href='/transferconfirm'">Continue</ion-button>
 </ion-content>
-<ion-footer class="ion-no-border ion-padding">
-  <ion-toolbar>
-    <ion-button class="btn-primary" onclick="location.href='/transferconfirm'">Continue</ion-button>
-  </ion-toolbar>
-</ion-footer>
+
