@@ -14,44 +14,15 @@
   <ion-row class="mt-1 mb-1">
     <ion-col>
       <div class="d-flex">
-        <ion-checkbox mode="md"></ion-checkbox>
+        <ion-checkbox [checked]="true" mode="md"></ion-checkbox>
         <div>&nbsp;Remember Me</div>
       </div>
     </ion-col>
     <ion-col>
-      <div class="ion-text-right"><a class="fp-btn" href="">Forgot Password</a></div>
+      <div class="ion-text-right mb-1"><a class="fp-btn" href="">Forgot Password</a></div>
     </ion-col>
   </ion-row>
   <ion-button class="btn-primary" onclick="location.href='/verifycode'">Login</ion-button>
-  <ion-row class="mb-1">
-    <ion-col>
-      <div class="separator"></div>
-    </ion-col>
-    <ion-col size="2">
-      <div class="ion-text-center text-medium">Or</div>
-    </ion-col>
-    <ion-col>
-      <div class="separator"></div>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col class="ion-text-center">
-      <ion-item detail="false" lines="none" button class="btn-socmed">
-        <div class="m-auto d-flex">
-          <div class="btn-logo-google"><ion-icon src="/assets/icons/icon-google.svg"></ion-icon></div>
-          <div class="btn-text">Google</div>
-        </div>
-      </ion-item>
-    </ion-col>
-    <ion-col class="ion-text-center">
-      <ion-item detail="false" lines="none" button class="btn-socmed">
-        <div class="m-auto d-flex">
-          <div class="btn-logo text-primary"><ion-icon name="logo-facebook" class="btn-logo"></ion-icon></div>
-          <div class="btn-text">Facebook</div>
-        </div>
-      </ion-item>
-    </ion-col>
-  </ion-row>
 </ion-content>
 <ion-footer [translucent]="true" class="ion-no-border">
   <ion-toolbar class="footer">

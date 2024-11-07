@@ -1,10 +1,5 @@
-<ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true" class="ion-padding">
-  <div class="fs-30 fw-500">Confirm Details</div>
+  <div class="mt-1 fs-30 fw-500">Confirm Details</div>
   <div class="fs-16 text-medium">Ensure all informations are correct.</div>
   <div class="mt-1 ion-padding transfer-id ">
     <div class="fs-18 fw-500">Transfer in progress&nbsp;<ion-spinner class="spinner" color="primary"></ion-spinner></div>
@@ -55,12 +50,8 @@
     <div style="margin-top:10px">Transfer Amount<span class="" style="float:right">₱ 1000.00</span></div>
     <div>Service Charge<span class="" style="float:right">₱ 20.00</span></div>
   </div>
-  <div class="fs-18 fw-500 mt-1">Total Amount<span style="float:right">₱ 1020.00</span></div>
+  <div class="fs-18 fw-500 mt-1 mb-3">Total Amount<span style="float:right">₱ 1020.00</span></div>
+  <ion-button mode="md" class="btn-primary" (click)="verifytransfer()">Confirm</ion-button>
+  <ion-button mode="md" color="danger" class="btn" onclick="location.href='/transfer'">Cancel</ion-button>
 </ion-content>
 
-<ion-footer class="ion-no-border">
-  <ion-toolbar class="ion-padding">
-    <ion-button class="btn-primary" (click)="verifytransfer()">Confirm</ion-button>
-    <ion-button color="danger" class="btn" onclick="location.href='/transfer'">Cancel</ion-button>
-  </ion-toolbar>
-</ion-footer>

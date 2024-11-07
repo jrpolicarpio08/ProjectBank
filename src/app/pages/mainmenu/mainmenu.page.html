@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border" id="main-content">
     <ion-toolbar>
-        <ion-buttons slot="start">
-            <ion-menu-button><ion-icon name="menu-outline"></ion-icon></ion-menu-button>
+        <ion-buttons slot="start" class="text-dark">
+            <ion-menu-button><ion-icon class="text-dark" name="menu-outline"></ion-icon></ion-menu-button>
         </ion-buttons>
     </ion-toolbar>
 </ion-header>
@@ -18,6 +18,7 @@
         </ion-item>
         <div class="text-medium">Accounts</div>
     </div>
+
     <swiper-container pagination="true" class="mb-1">
         <swiper-slide class="vc">
             <ion-item details="false" lines="none" class="card-balance text-white">
@@ -31,7 +32,6 @@
                 </div>
             </ion-item>
         </swiper-slide>
-
         <swiper-slide>
             <ion-item details="false" lines="none" class="card-balance text-white">
                 <div class="">
@@ -44,7 +44,6 @@
                 </div>
             </ion-item>
         </swiper-slide>
-
         <swiper-slide>
             <ion-item details="false" lines="none" class="card-balance text-white">
                 <div class="">
@@ -57,8 +56,8 @@
                 </div>
             </ion-item>
         </swiper-slide>
-
     </swiper-container>
+
     <div class="h-center">
         <div>
             <ion-item button detail="false" lines="none" class="page-button" onclick="location.href='/transfer'">
@@ -79,8 +78,8 @@
         <div>
             <ion-item button detail="false" lines="none" class="page-button" onclick="location.href='/transactions'">
                 <div>
-                    <ion-icon class="fs-30 page-icon-transaction" name="file-tray-full-outline"></ion-icon>
-                    <div class="fs-10">Transactions</div>
+                    <ion-icon class="fs-30 page-icon-activity" name="file-tray-full-outline"></ion-icon>
+                    <div class=" page-button-label-activity fs-14">Activity</div>
                 </div>
             </ion-item>
         </div>  
@@ -108,12 +107,14 @@
             <ion-icon class="text-white" slot="end" name="newspaper-outline"></ion-icon>
         </ion-item>
     </div>
+
     <div class="mb-1">
         <ion-item class="sub-btn" button detail="false" lines="none" onclick="location.href='/subscriptions'">
             <div slot="start" class="">Subscriptions</div>
             <ion-icon class="text-white" slot="end" name="pricetags-outline"></ion-icon>
         </ion-item>
     </div>
+
 </ion-content>
 
 <ion-menu mode="md" contentId="main-content">

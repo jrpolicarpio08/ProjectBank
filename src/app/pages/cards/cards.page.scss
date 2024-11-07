@@ -1,9 +1,9 @@
 swiper-container{
-    height: 100%;
+    height: 600px;
 }
 swiper-container::part(pagination){
-    position: fixed;
-    bottom: 415px;
+    position: sticky;
+    bottom: 350px;
 }
 .card-container{
     background-color: #3880ff;

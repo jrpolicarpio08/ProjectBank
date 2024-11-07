@@ -49,7 +49,7 @@ swiper-container{
     overflow: visible;
     margin-right: 0.3rem;
 
-    .page-icon-transaction,
+    .page-icon-activity,
     .page-icon-cards,
     .page-icon-bills,
     .page-icon-transfer,
@@ -72,7 +72,25 @@ swiper-container{
     .page-button-label-deposit{
         margin-left: 6px;
     }
-
+    .page-button-label-activity{
+        margin-left: 7px;
+    }
 }
+@media screen and (min-width: 320px) and (max-width: 399px) {
+    .page-button{
+        --min-height: 65px ;
+        width: 65px ;
+        --padding-start: 3px;
+        font-size: 10px;
+    }
+    .page-icon-activity,
+    .page-icon-cards,
+    .page-icon-bills,
+    .page-icon-transfer,
+    .page-icon-deposit{
+        font-size: 25px;
+    }
+  }
+
 
 

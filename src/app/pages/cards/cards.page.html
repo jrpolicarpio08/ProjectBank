@@ -8,7 +8,7 @@
     <ion-title class="fs-25 ion-text-center">Cards</ion-title>
     <ion-buttons slot="end">
       <ion-button fill="clear" onclick="location.href='/addcard'">
-        <ion-icon class="fs-25" name="add-outline"></ion-icon>
+        <ion-icon class="fs-25 text-dark" name="add-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -16,13 +16,14 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
-  <div class="mt-1 fs-30 fw-900">Total Balance</div>
-  <div class="fs-50">₱ 35,000.00</div>
+  <div class="fs-30 fw-900">Total Balance</div>
+  <div class="fs-50">₱ 35,000</div>
   <div class="mt-2 fs-25 fw-900">Your Cards</div>
 
   <swiper-container pagination="true" css-mode="true">
 
     <swiper-slide>
+
       <div class="mt-1 card-container ion-padding">
         <div class="ion-padding">
           <div class="text-uppercase fw-900">GCash </div>
@@ -40,9 +41,10 @@
         </div>
       </div>
       <div class="ion-text-center mt-3">
-        <div class="fs-50 fw-500">₱ 1,500.00</div>
+        <div class="fs-50 fw-500">₱ 1,500</div>
         <DIV class="fs-18 fw-900 text-medium">Balance</DIV>
       </div>
+
       <div class="mt-1 fw-900 fs-25">Settings</div>
       <div class="mt-1 settings-active ion-padding">
         <div class="d-flex">
@@ -60,14 +62,15 @@
           </div>
           <ion-alert mode="ios" trigger="present-alert1" header="Disable Card" subHeader="Please confirm to conitnue" message="Are you sure you want to temporarily disable this card ?" [buttons]="alertButtons1"></ion-alert>
         </div>
-        
       </div>
       <div class="mt-1">
-        <ion-button class="btn" color="danger" expand="block">Remove Card</ion-button>
+        <ion-button mode="md" class="btn" color="danger" expand="block">Remove Card</ion-button>
       </div>
+
     </swiper-slide>
 
     <swiper-slide>
+
       <div class="mt-1 card-container ion-padding">
         <div class="ion-padding">
           <div class="text-uppercase fw-900">PayMaya </div>
@@ -85,9 +88,10 @@
         </div>
       </div>
       <div class="ion-text-center mt-3">
-        <div class="fs-50 fw-500">₱ 5,500.00</div>
+        <div class="fs-50 fw-500">₱ 5,500</div>
         <DIV class="fs-18 fw-900 text-medium">Balance</DIV>
       </div>
+
       <div class="mt-1 fw-900 fs-25">Settings</div>
       <div class="mt-1 settings-active ion-padding">
         <div class="d-flex">
@@ -101,14 +105,15 @@
         <div class="d-flex">
           <div class="text-uppercase text-white">Disable Card</div>
           <div class="auto-pay-toggle">
-            <ion-toggle id="present-alert2" mode="ios" color="success"></ion-toggle>
+            <ion-toggle id="present-alert1" mode="ios" color="success"></ion-toggle>
           </div>
-          <ion-alert mode="ios" trigger="present-alert2" header="Disable Card" subHeader="Please confirm to conitnue" message="Are you sure you want to temporarily disable this card ?" [buttons]="alertButtons2"></ion-alert>
+          <ion-alert mode="ios" trigger="present-alert1" header="Disable Card" subHeader="Please confirm to conitnue" message="Are you sure you want to temporarily disable this card ?" [buttons]="alertButtons1"></ion-alert>
         </div>
       </div>
       <div class="mt-1">
-        <ion-button class="btn" color="danger" expand="block">Remove Card</ion-button>
+        <ion-button mode="md" class="btn" color="danger" expand="block">Remove Card</ion-button>
       </div>
+
     </swiper-slide>
 
     <swiper-slide>
@@ -129,7 +134,7 @@
         </div>
       </div>
       <div class="ion-text-center mt-3">
-        <div class="fs-50 fw-500">$ 500.00</div>
+        <div class="fs-50 fw-500">$ 500</div>
         <DIV class="fs-18 fw-900 text-medium">Balance</DIV>
       </div>
       <div class="mt-1 fw-900 fs-25">Settings</div>
@@ -156,5 +161,28 @@
     </swiper-slide>
 
   </swiper-container>
+
+  <!-- <div class="mt-1 fw-900 fs-25">Settings</div>
+  <div class="mt-1 settings-active ion-padding">
+    <div class="d-flex">
+      <div class="text-uppercase text-white">Automatic Payment</div>
+      <div class="auto-pay-toggle">
+        <ion-toggle mode="ios" color="success"></ion-toggle>
+      </div>
+    </div>
+  </div>
+  <div class="mt-1 settings-active ion-padding">
+    <div class="d-flex">
+      <div class="text-uppercase text-white">Disable Card</div>
+      <div class="auto-pay-toggle">
+        <ion-toggle id="present-alert1" mode="ios" color="success"></ion-toggle>
+      </div>
+      <ion-alert mode="ios" trigger="present-alert1" header="Disable Card" subHeader="Please confirm to conitnue" message="Are you sure you want to temporarily disable this card ?" [buttons]="alertButtons1"></ion-alert>
+    </div>
+    
+  </div>
+  <div class="mt-1">
+    <ion-button class="btn" color="danger" expand="block">Remove Card</ion-button>
+  </div> -->
 
 </ion-content>
