@@ -41,12 +41,8 @@
     <div style="margin-top:10px">Bill Amount<span class="" style="float:right">₱ 2,656.00</span></div>
     <div>Transaction Charge<span class="" style="float:right">₱ 10.00</span></div>
   </div>
-  <div class="fs-18 fw-500 mt-1">Total Amount<span style="float:right">₱ 2,666.00</span></div>
+  <div class="fs-18 fw-500 mt-1 mb-5">Total Amount<span style="float:right">₱ 2,666.00</span></div>
+  <ion-button mode="md" class="btn-primary" (click)="billpaidconverge()">Confirm</ion-button>
+  <ion-button mode="md" color="danger" class="btn" (click)="close()">Cancel</ion-button>
 </ion-content>
 
-<ion-footer class="ion-no-border">
-  <ion-toolbar class="ion-padding">
-    <ion-button class="btn-primary" (click)="billpaidconverge()">Confirm</ion-button>
-    <ion-button color="danger" class="btn" (click)="close()">Cancel</ion-button>
-  </ion-toolbar>
-</ion-footer>
