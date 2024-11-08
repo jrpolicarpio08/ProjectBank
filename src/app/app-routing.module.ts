@@ -32,10 +32,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/verifycode/verifycode.module').then( m => m.VerifycodePageModule)
   },
   {
-    path: 'emailverified',
-    loadChildren: () => import('./pages/emailverified/emailverified.module').then( m => m.EmailverifiedPageModule)
-  },
-  {
     path: 'userqr',
     loadChildren: () => import('./pages/userqr/userqr.module').then( m => m.UserqrPageModule)
   },
@@ -118,10 +114,6 @@ const routes: Routes = [
   {
     path: 'depositconfirm',
     loadChildren: () => import('./pages/depositconfirm/depositconfirm.module').then( m => m.DepositconfirmPageModule)
-  },
-  {
-    path: 'vouchers',
-    loadChildren: () => import('./pages/vouchers/vouchers.module').then( m => m.VouchersPageModule)
   },
   {
     path: 'bills',

@@ -80,7 +80,7 @@
         </ion-item>
       </div>
   </div>
-  <div class="iselec mt-1">
+  <div class="iselec mt-1 mb-5">
     <div class="fs-20">Expired Date</div>
     <div class="h-center">
       <div class="mr-1">
@@ -163,11 +163,8 @@
       </div>
     </div>
   </div>
+  <ion-button id="confirm-pass" mode="md" class="btn-primary" expand="block">Link Card</ion-button>
+  <ion-alert mode="ios" trigger="confirm-pass" class="custom-alert" header="Add Card" subHeader="To continue please type your password below" [buttons]="alertButtons" [inputs]="alertInputs"></ion-alert>
 </ion-content>
 
-<ion-footer class="ion-no-border ion-padding">
-  <ion-toolbar>
-    <ion-button id="confirm-pass" class="btn-primary" expand="block">Link Card</ion-button>
-    <ion-alert mode="ios" trigger="confirm-pass" class="custom-alert" header="Add Card" subHeader="To continue please type your password below" [buttons]="alertButtons" [inputs]="alertInputs"></ion-alert>
-  </ion-toolbar>
-</ion-footer>
+

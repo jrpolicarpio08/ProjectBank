@@ -29,19 +29,13 @@
         <ion-select-option>Transactions</ion-select-option>
       </ion-select>
     </ion-item>
-    <ion-item lines="none" class="mt-1 problem-select">
+    <ion-item lines="none" class="mt-1 mb-5 problem-select">
       <ion-select mode="ios" justify="space-between" toggleIcon="caret-down-outline" expandedIcon="caret-up-outline" label="Tell us more:">
         <ion-select-option>I got hacked</ion-select-option>
         <ion-select-option>I want a refund</ion-select-option>
         <ion-select-option>Other</ion-select-option>
       </ion-select>
     </ion-item>
+    <ion-button mode="md" class="btn" color="danger" (click)="close()">Cancel</ion-button>
   </div>
 </ion-content>
-<ion-footer class="ion-no-border">
-  <ion-toolbar class="ion-padding">
-    <div>
-      <ion-button class="btn" color="danger" (click)="close()">Cancel</ion-button>
-    </div>
-  </ion-toolbar>
-</ion-footer>
